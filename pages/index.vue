@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-normal tracking-normal text-gray-900" style="font-family: 'Source Sans Pro', sans-serif;">
+  <div class="leading-normal tracking-normal text-gray-900 font-sans" >
 
 <!--
 <div class="h-screen pb-14 bg-cover mx-auto" :style="{backgroundImage:`url(${backgroundUrl})` }">
@@ -16,36 +16,64 @@
 	</div>
 -->
 
-<div class="w-screen flex p-5 shadow">
+	  <div class="w-screen flex p-5 shadow fixed bg-white">
 			
 		<div class="w-screen flex items-center justify-between">
-			<a class="mx-auto flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-        <svg class="h-8 fill-current text-blue-600 pr-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg>La Voz Universal
-
+			<a class="mx-auto flex items-center text-blue-600 no-underline hover:no-underline font-bold text-4xl lg:text-4xl"  href="#"> 
+        La Voz Universal
+        <!-- <svg class="h-8 fill-current text-blue-600 pl-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg> -->
 			</a>
 			
 			
-			
+	
 		</div>
-</div>
+  </div>
 
+  
 	<!--Main-->
-	<div class="container pt-22 md:pt-5 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+	<div class="container pt-22 md:pt-5 px-6 mx-auto flex flex-wrap lg:flex-row flex-col md:flex-row items-center">
 
 
 
+    
 		
 		<!--Left Col-->
-		<div class="flex flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden ">
+		<div class="flex flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden pt-32 ">
 
-      <div class="container flex">
+      <div class="container">
         <!-- w-auto para Iphones -->
-        <img class="w-1/2 mx-auto rounded-full border-8 border-blue-600 shadow-lg" src="~/assets/adolfo.png" />
+        <img class="w-1/2 mx-auto rounded-full border-8 border-blue-400 shadow" src="~/assets/adolfo.png" />
       </div>
 
 
-			<h1 class="my-4 text-3xl md:text-5xl text-blue-600 font-bold leading-tight text-center md:text-left slide-in-bottom-h1">Adolfo Fernández Zepeda</h1>
-			<p class="leading-normal text-xl md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle">La radio favorita de México.</p>
+			<h1 
+      class=
+      "my-4
+      text-3xl
+      md:text-5xl
+      text-blue-400
+      font-bold
+      leading-tight
+      text-center     
+      slide-in-bottom-h1
+      mx-auto    
+      font-serif
+      ">
+      Adolfo Fernández Zepeda
+      </h1>
+
+			<p 
+      class=
+      "leading-normal
+      text-xl 
+      md:text-2xl 
+      mb-8
+      text-center 
+      md:text-left
+      slide-in-bottom-subtitle
+      mx-auto">
+      La radio favorita de México.
+      </p>
 
 		</div>
 		
@@ -71,13 +99,27 @@
       </div>
 
      </div>
-	
-	
-    <Footer />
-	</div>
-	
+  </div>
 
+	
+  <Footer />
+  <!--  
+	
+    <div class="w-screen flex p-5 shadow block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+			
+		<div class="w-screen flex items-center justify-between">
+			<a class="mx-auto flex items-center text-blue-400 no-underline hover:no-underline font-bold text-4xl lg:text-4xl"  href="#"> 
+        La Voz Universal
+        <svg class="h-8 fill-current text-blue-600 pl-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg>
+			</a>
+			
+			
+			
+		</div>
+
+-->
 </div>
+
 
   <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

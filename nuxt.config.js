@@ -59,7 +59,9 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      name: 'La Voz Universal',
+      lang: 'es',
+      icons: ["static/favicon.png"]
     }
   },
 
