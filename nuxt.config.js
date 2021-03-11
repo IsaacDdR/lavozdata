@@ -6,6 +6,7 @@ export default {
   head: {
     title: 'La Voz Universal',
     meta: [
+      { name: 'theme-color', content: '#b1d0c6'},
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ', name: 'La voz Universal la estacion de radio favorita de los mexicanos', content: '' }
@@ -60,8 +61,10 @@ export default {
   pwa: {
     manifest: {
       name: 'La Voz Universal',
+      name: 'La Voz Universal',
       lang: 'es',
-      icons: ["static/favicon.png"]
+      icons: ["static/favicon.png"],
+      theme_color: "#a3dcff"
     }
   },
 
