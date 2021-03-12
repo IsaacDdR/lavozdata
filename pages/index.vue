@@ -84,7 +84,7 @@
  
      <div class="container w-full text-center mx-auto pb-24 lg:pb-0 fade-in pt-8">
       <div class="container w-full ">
-        <p class="mx-auto text-blue-600 font-bold pb-8 lg:pb-6 text-center fade-in">Síguenos en redes</p>
+        <p class="mx-auto text-blue-800 font-bold pb-8 lg:pb-6 text-center fade-in pb-6">Síguenos en redes</p>
       </div>
     
       <div class="container w-full">
