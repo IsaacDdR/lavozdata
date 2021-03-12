@@ -61,7 +61,7 @@ export default {
   pwa: {
     manifest: {
       name: 'La Voz Universal',
-      name: 'La Voz Universal',
+      short_name: 'La Voz Universal',
       lang: 'es',
       icons: ["static/favicon.png"],
       theme_color: "#a3dcff"
