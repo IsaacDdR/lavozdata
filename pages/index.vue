@@ -1,140 +1,73 @@
 <template>
-  <div class="leading-normal tracking-normal text-gray-900 font-sans" >
+  <div class="w-screen leading-normal tracking-normal text-gray-900 font-sans">
+    <div
+      class="container mx-auto flex flex-wrap lg:flex-row flex-col md:flex-row items-center"
+    >
+      <div
+        class=" my-24 mx-auto flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+      >
+        <h1
+          class="md:my-4
+        text-blue-600
+          text-6xl
+          font-bold
+          leading-tight
+          text-center     
+          slide-in-bottom-h1
+          font-serif
+          mt-5"
+        >
+          La Voz Universal
+        </h1>
+        <h1 class="text-center md: text-xl text-blue-500 font-serif">es</h1>
 
-<!--
-<div class="h-screen pb-14 bg-cover mx-auto" :style="{backgroundImage:`url(${backgroundUrl})` }">
--->
-	<!--Nav
-	<div class="w-full container mx-auto pb-8 mb-12 ">
-			
-		<div class="w-full flex items-center justify-between fixed bg-white py-4 shadow-md">
-			<a class="mx-auto flex items-center text-blue-700 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-        <svg class="h-8 fill-current text-blue-600 pr-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg>La Voz Universal
-			</a>
-		</div>
+        <h1
+          class="my-4
+          text-4xl
+        text-blue-500
+          font-bold
+          leading-tight
+          text-center     
+          font-serif"
+        >
+          Adolfo Fernández Zepeda
+        </h1>
 
-	</div>
--->
+        <p
+          class="leading-normal
+          md:text-2xl 
+          mb-8
+          text-center 
+          mx-auto
+          text-white"
+        >
+          La voz favorita de México.
+        </p>
+      </div>
 
-	  <div class="w-screen flex p-5 shadow fixed bg-white">
-			
-		<div class="w-screen flex items-center justify-between">
-			<a class="mx-auto flex items-center text-blue-600 no-underline hover:no-underline font-bold text-4xl lg:text-4xl"  href="#"> 
-        La Voz Universal
-        <!-- <svg class="h-8 fill-current text-blue-600 pl-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg> -->
-			</a>
-			
-			
-	
-		</div>
+      <Stream />
+    </div>
+    <div class="mx-auto flex flex-col md:flex-row md:w-3/4 pt-10 font-serif">
+      <div class="text-center text-white mx-auto">
+        <img
+          class="mx-auto w-1/2 md:w-3/4 rounded-xl shadow-xl border-gray-500 border-8"
+          src="~/assets/adolfo.jpg"
+          alt="Adolfo"
+        />
+        <div class="py-5 w-100 italic text-black text-bold text-xl">
+          <p>
+            He sido la voz unisal desde
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto text-center">
+        <h1 class="text-white text-4xl py-3">Adolfo Fernández Zepeda</h1>
+        <p class="text-white">Texto!</p>
+      </div>
+    </div>
+    <Redes />
+    <Footer />
   </div>
-
-  
-	<!--Main-->
-	<div class="container pt-22 md:pt-5 px-6 mx-auto flex flex-wrap lg:flex-row flex-col md:flex-row items-center">
-
-
-
-    
-		
-		<!--Left Col-->
-		<div class="flex flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden pt-32 ">
-
-      <div class="container">
-        <!-- w-auto para Iphones -->
-        <img  alt="Adolfo Fernandez Zepeda" class="w-1/2 mx-auto rounded-full border-8 border-blue-700 shadow" src="~/assets/adolfo.png" />
-
-      </div>
-
-
-			<h1 
-      class=
-      "my-4
-      text-3xl
-      md:text-5xl
-      text-blue-600
-      font-bold
-      leading-tight
-      text-center     
-      slide-in-bottom-h1
-      mx-auto    
-      font-serif
-      ">
-      Adolfo Fernández Zepeda
-      </h1>
-
-			<p 
-      class=
-      "leading-normal
-      text-xl 
-      md:text-2xl 
-      mb-8
-      text-center 
-      md:text-left
-      slide-in-bottom-subtitle
-      mx-auto">
-      La radio favorita de México.
-      </p>
-
-		</div>
-		
-		<Stream />
-
-
- 
-     <div class="container w-full text-center mx-auto pb-24 lg:pb-0 fade-in pt-8">
-      <div class="container w-full ">
-        <p class="mx-auto text-blue-800 font-bold pb-8 lg:pb-6 text-center fade-in pb-6">Síguenos en redes</p>
-      </div>
-    
-      <div class="container w-full">
-
-          <a class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center" data-tippy-content="#facebook_id" href="#">
-              <svg class="fill-current h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
-          </a>
-
-          <a class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center" data-tippy-content="@twitter_handle" href="#">
-              <svg class="fill-current h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
-          </a>
-
-      </div>
-
-     </div>
-  </div>
-
-	
-  <Footer />
-  <!--  
-	
-    <div class="w-screen flex p-5 shadow block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
-			
-		<div class="w-screen flex items-center justify-between">
-			<a class="mx-auto flex items-center text-blue-400 no-underline hover:no-underline font-bold text-4xl lg:text-4xl"  href="#"> 
-        La Voz Universal
-        <svg class="h-8 fill-current text-blue-600 pl-2" id="Capa_1" enable-background="new 0 0 512 512" height="40" viewBox="0 0 512 512" width="40" xmlns="http://www.w3.org/2000/svg"><g><path d="m406 272c-8.284 0-15 6.716-15 15 0 74.439-60.561 135-135 135s-135-60.561-135-135c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 85.925 66.023 156.707 150 164.311v30.689h-45c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15h-45v-30.689c83.977-7.604 150-78.386 150-164.311 0-8.284-6.716-15-15-15z"/><path d="m256 0c-57.897 0-105 47.103-105 105v182c0 57.897 47.103 105 105 105s105-47.103 105-105v-182c0-57.897-47.103-105-105-105zm75 287c0 41.355-33.645 75-75 75s-75-33.645-75-75v-182c0-41.355 33.645-75 75-75s75 33.645 75 75z"/><path d="m286 121h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 181h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m286 241h-60c-8.284 0-15 6.716-15 15s6.716 15 15 15h60c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m406 121c-8.284 0-15 6.716-15 15v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15z"/><path d="m466 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/><path d="m91 136v60c0 8.284 6.716 15 15 15s15-6.716 15-15v-60c0-8.284-6.716-15-15-15s-15 6.716-15 15z"/><path d="m46 91c-8.284 0-15 6.716-15 15v120c0 8.284 6.716 15 15 15s15-6.716 15-15v-120c0-8.284-6.716-15-15-15z"/></g></svg>
-			</a>
-			
-			
-			
-		</div>
-
--->
-</div>
-
-
-  <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
-
 </template>
 
-
-<script>
-import backgroundUrl from '~/assets/bg.svg'
-export default {
-  data() {
-    return {backgroundUrl}
-  }
-}
-
-</script>
+<script></script>
