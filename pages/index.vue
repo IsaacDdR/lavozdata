@@ -6,9 +6,14 @@
       <div
         class=" my-24 mx-auto flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
       >
-        <h1
-          class="md:my-4
-        text-blue-600
+        <NuxtLink
+          :to="{ name: 'artists-slug', params: { slug: person.slug } }"
+          v-for="person of persons"
+          :key="person.name"
+        >
+          <h1
+            class="md:my-4
+          text-blue-600
           text-6xl
           font-bold
           leading-tight
@@ -16,32 +21,24 @@
           slide-in-bottom-h1
           font-serif
           mt-5"
-        >
-          La Voz Universal
-        </h1>
-        <h1 class="text-center md: text-xl text-blue-500 font-serif">es</h1>
-
-        <h1
-          class="my-4
-          text-4xl
-        text-blue-500
-          font-bold
-          leading-tight
-          text-center     
-          font-serif"
-        >
-          Adolfo Fernández Zepeda
-        </h1>
-
+          >
+            {{ person.name }}
+          </h1>
+          <div class="flex">
+            <p class="mx-auto text-2xl italic">
+              {{ '"' + person.frase + '"' }}
+            </p>
+          </div>
+        </NuxtLink>
         <p
           class="leading-normal
-          md:text-2xl 
-          mb-8
+          text-xl
+          my-4
           text-center 
           mx-auto
-          text-white"
+          "
         >
-          La voz favorita de México.
+          La radio favorita de México.
         </p>
       </div>
 
@@ -70,4 +67,19 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  async asyncData({ $content }) {
+    const current = new Date();
+    const todayDay = current.getDate();
+    const todayMonth = current.getMonth();
+
+    const persons = await $content("artists")
+      .where({ day: todayDay, month: todayMonth })
+      .fetch();
+    return {
+      persons
+    };
+  }
+};
+</script>
