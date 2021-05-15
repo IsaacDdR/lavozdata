@@ -47,7 +47,10 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/google-analytics"
+
+    "@nuxtjs/google-analytics",
+
+    "nuxt-vite"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,6 +58,7 @@ export default {
     "@nuxt/content",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
+
     "@nuxtjs/google-fonts"
   ],
 

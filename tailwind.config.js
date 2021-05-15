@@ -3,9 +3,9 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         "sm-pattern":
-          "url('https://res.cloudinary.com/duruqkfg4/image/upload/v1621049673/bg-sm_vnn8ds.jpg')",
+          "url('https://res.cloudinary.com/duruqkfg4/image/upload/v1621105330/bg-mic_gywosv.webp')",
         "lg-pattern":
-          "url('https://res.cloudinary.com/duruqkfg4/image/upload/v1621049673/bg-lg_zotw6v.jpg')"
+          "url('https://res.cloudinary.com/duruqkfg4/image/upload/v1621103586/podcast-lg-webp-lossy_ulviz8.webp')"
       })
     }
   }

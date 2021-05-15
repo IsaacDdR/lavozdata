@@ -28,12 +28,81 @@
       <Stream class="mx-auto" />
     </div>
 
-    <div class="w-full" v-for="person of persons" :key="person.slug">
+    <div
+      v-for="person in persons"
+      :key="person.slug"
+      class="sr-only lg:not-sr-only"
+    >
+      <section class="mx-auto text-gray-600 body-font">
+        <div class="flex px-5 py-24 mx-auto flex flex-col">
+          <div class="bg-white rounded-lg lg:w-3/4 mx-auto">
+            <div class="rounded-t-lg h-72 shadow overflow-hidden">
+              <img
+                alt="content"
+                class="object-cover object-center h-full w-full"
+                :src="person.portrait"
+              />
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10 p-6">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <img
+                  class="w-1/2 mx-auto rounded-full"
+                  :src="person.imageCircle"
+                />
+                <div
+                  class="flex flex-col items-center text-center justify-center"
+                >
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
+                    {{ person.name }}
+                  </h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                  <p class="text-base">
+                    {{ person.description }}
+                  </p>
+                </div>
+              </div>
+              <div
+                class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+              >
+                <p class="leading-relaxed text-lg mb-4">
+                  Meggings portland fingerstache lyft, post-ironic fixie man bun
+                  banh mi umami everyday carry hexagon locavore direct trade art
+                  party. Locavore small batch listicle gastropub farm-to-table
+                  lumbersexual salvia messenger bag. Coloring book flannel
+                  truffaut craft beer drinking vinegar sartorial, disrupt
+                  fashion axe normcore meh butcher. Portland 90's scenester
+                  vexillologist forage post-ironic asymmetrical, chartreuse
+                  disrupt butcher paleo intelligentsia pabst before they sold
+                  out four loko. 3 wolf moon brooklyn.
+                </p>
+                <a class="text-indigo-500 inline-flex items-center"
+                  >Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--::::::::::::::::::::Efemerides::::::::::::::::::::::::-->
+    <div class="lg:sr-only w-full" v-for="person of persons" :key="person.slug">
       <p class="text-bold text-3xl ml-4 pt-4 text-center">
         Un día como hoy...
       </p>
       <div class="flex flex-wrap">
-        <div class="p-4 md:w-1/3 mx-auto">
+        <div class="p-4 md:w-1/2 mx-auto">
           <div
             class="bg-white bg-opacity-75 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
           >
@@ -152,20 +221,11 @@ export default {
       .where({ day: todayDay, month: todayMonth })
       .fetch();
 
-    console.log(personToday[0].slug);
-
     const persons = await $content("artists")
       .where({ day: todayDay, month: todayMonth })
       .fetch();
 
-    const [prev, next] = await $content("artists")
-      .only(["name", "slug"])
-      .surround(personToday[0].slug)
-      .fetch();
-
     return {
-      prev,
-      next,
       todayDay,
       todayMonth,
       personToday,
