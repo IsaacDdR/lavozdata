@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-hero-pattern bg-cover bg-opacity-25 bg-no-repeat">
+  <div
+    class="bg-sm-pattern md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat"
+  >
     <Nuxt />
   </div>
 </template>
