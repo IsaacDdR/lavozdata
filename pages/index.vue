@@ -4,7 +4,7 @@
       class="w-screen leading-normal tracking-normal text-gray-900 font-sans"
     >
       <div
-        class=" mt-12 mb-8 mx-auto flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start"
+        class=" mt-24 mb-8 mx-auto flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start"
       >
         <h1
           class="md:my-4
@@ -35,7 +35,7 @@
     >
       <section class="mx-auto text-gray-600 body-font">
         <div class="flex px-5 py-24 mx-auto flex flex-col">
-          <div class="bg-white rounded-lg lg:w-3/4 mx-auto">
+          <div class="bg-white rounded-lg lg:w-1/2 mx-auto">
             <div class="rounded-t-lg h-72 shadow overflow-hidden">
               <img
                 alt="content"

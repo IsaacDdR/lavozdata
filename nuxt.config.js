@@ -8,7 +8,10 @@ export default {
     meta: [
       { name: "theme-color", content: "#b1d0c6" },
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1, user-scalable=no"
+      },
       {
         hid:
           "La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
