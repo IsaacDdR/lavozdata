@@ -4,25 +4,34 @@
       class="w-screen leading-normal tracking-normal text-gray-900 font-sans"
     >
       <div
-        class=" mt-24 mb-8 mx-auto flex-col lg:mx-auto w-full xl:w-2/5 justify-center lg:items-start"
+        class="
+          mt-24
+          mb-8
+          mx-auto
+          flex-col
+          lg:mx-auto
+          w-full
+          xl:w-2/5
+          justify-center
+          lg:items-start
+        "
       >
         <h1
-          class="md:my-4
-          text-blue-600
-          text-6xl
-          font-bold
-          leading-tight
-          text-center     
-          slide-in-bottom-h1
-          font-serif
-          mt-5"
+          class="
+            md:my-4
+            text-blue-600 text-6xl
+            font-bold
+            leading-tight
+            text-center
+            slide-in-bottom-h1
+            font-serif
+            mt-5
+          "
         >
           La Voz Universal
         </h1>
         <div class="flex">
-          <p class="mx-auto text-2xl italic">
-            La voz favorita de mexico
-          </p>
+          <p class="mx-auto text-2xl italic">La voz favorita de mexico</p>
         </div>
       </div>
       <Stream class="mx-auto" />
@@ -39,7 +48,7 @@
             <p class="text-bold text-2xl ml-4 p-4 text-black">
               Un día como hoy en {{ person.year }}
             </p>
-            <div class=" h-72 shadow overflow-hidden">
+            <div class="h-72 shadow overflow-hidden">
               <img
                 alt="content"
                 class="shadow object-cover object-center h-full w-full"
@@ -60,24 +69,29 @@
                   </h2>
                   <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                   <p class="text-base">
-                    {{ person.description }}
+                    {{ person.resumen }}
                   </p>
                 </div>
               </div>
               <div
-                class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+                class="
+                  sm:w-2/3
+                  sm:pl-8
+                  sm:py-8
+                  sm:border-l
+                  border-gray-200
+                  sm:border-t-0
+                  border-t
+                  mt-4
+                  pt-4
+                  sm:mt-0
+                  text-center
+                  sm:text-left
+                "
               >
-                <p class="leading-relaxed text-lg mb-4">
-                  Meggings portland fingerstache lyft, post-ironic fixie man bun
-                  banh mi umami everyday carry hexagon locavore direct trade art
-                  party. Locavore small batch listicle gastropub farm-to-table
-                  lumbersexual salvia messenger bag. Coloring book flannel
-                  truffaut craft beer drinking vinegar sartorial, disrupt
-                  fashion axe normcore meh butcher. Portland 90's scenester
-                  vexillologist forage post-ironic asymmetrical, chartreuse
-                  disrupt butcher paleo intelligentsia pabst before they sold
-                  out four loko. 3 wolf moon brooklyn.
-                </p>
+                <article class="leading-relaxed text-lg mb-4">
+                  {{ person.description }}
+                </article>
                 <a class="text-indigo-500 inline-flex items-center"
                   >Learn More
                   <svg
@@ -104,7 +118,14 @@
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/2 mx-auto">
           <div
-            class="shadow-lg bg-white bg-opacity-75 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            class="
+              shadow-lg
+              bg-white bg-opacity-75
+              h-full
+              border-2 border-gray-200 border-opacity-60
+              rounded-lg
+              overflow-hidden
+            "
           >
             <p class="text-bold text-2xl p-4 text-left">
               Un día como hoy en {{ person.year }}
@@ -116,11 +137,18 @@
             />
             <div class="p-6">
               <h2
-                class="tracking-widest text-xs title-font font-medium text-gray-800 mb-1 rounded-full bg-teal-accent-400"
+                class="
+                  tracking-widest
+                  text-xs
+                  title-font
+                  font-medium
+                  text-gray-800
+                  mb-1
+                  rounded-full
+                  bg-teal-accent-400
+                "
               >
-                <NuxtLink to="/artists">
-                  EFEMÉRIDES
-                </NuxtLink>
+                <NuxtLink to="/artists"> EFEMÉRIDES </NuxtLink>
               </h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
                 {{ person.name }}
@@ -128,14 +156,19 @@
               <p class="leading-relaxed mb-3">
                 {{ person.description }}
               </p>
-              <div class="flex items-center flex-wrap ">
+              <div class="flex items-center flex-wrap">
                 <NuxtLink
                   :to="{
-                    name: 'artists-blog-slug',
-                    params: { slug: person.slug }
+                    name: 'artistsBlog-slug',
+                    params: { slug: person.slug },
                   }"
-                  class="text-indigo-500 inline-flex items-center md:mb-2
-                  lg:mb-0"
+                  class="
+                    text-indigo-500
+                    inline-flex
+                    items-center
+                    md:mb-2
+                    lg:mb-0
+                  "
                   >Conoce más
                   <svg
                     class="w-4 h-4 ml-2"
@@ -151,7 +184,20 @@
                   </svg>
                 </NuxtLink>
                 <span
-                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
+                  class="
+                    text-gray-400
+                    mr-3
+                    inline-flex
+                    items-center
+                    lg:ml-auto
+                    md:ml-0
+                    ml-auto
+                    leading-none
+                    text-sm
+                    pr-3
+                    py-1
+                    border-r-2 border-gray-200
+                  "
                 >
                   <svg
                     class="w-4 h-4 mr-1"
@@ -169,7 +215,13 @@
                   >1.2K
                 </span>
                 <span
-                  class="text-gray-400 inline-flex items-center leading-none text-sm"
+                  class="
+                    text-gray-400
+                    inline-flex
+                    items-center
+                    leading-none
+                    text-sm
+                  "
                 >
                   <svg
                     class="w-4 h-4 mr-1"
@@ -199,7 +251,14 @@
       </h1>
       <div class="text-center text-white mx-auto">
         <img
-          class="mx-auto w-1/2 md:w-1/4 rounded-full shadow-xl border-blue-500 border-8"
+          class="
+            mx-auto
+            w-1/2
+            md:w-1/4
+            rounded-full
+            shadow-xl
+            border-blue-500 border-8
+          "
           src="~/assets/adolfo.jpg"
           alt="Adolfo"
         />
@@ -231,7 +290,13 @@
                 class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"
               ></span>
               <h2
-                class="text-gray-900 font-medium title-font tracking-wider text-sm"
+                class="
+                  text-gray-900
+                  font-medium
+                  title-font
+                  tracking-wider
+                  text-sm
+                "
               >
                 HOLDEN CAULFIELD
               </h2>
@@ -263,9 +328,9 @@ export default {
       todayDay,
       todayMonth,
       personToday,
-      persons
+      persons,
     };
-  }
+  },
 };
 </script>
 <style>

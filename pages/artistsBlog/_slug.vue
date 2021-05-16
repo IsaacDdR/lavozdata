@@ -11,6 +11,6 @@ export default {
   async asyncData({ $content, params }) {
     const artist = await $content("artists", params.slug).fetch();
     return { artist };
-  }
+  },
 };
 </script>

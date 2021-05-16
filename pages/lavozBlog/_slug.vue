@@ -6,8 +6,8 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const artist = await $content("artists", params.slug).fetch();
+    const artist = await $content("blog", params.slug).fetch();
     return { artist };
-  }
+  },
 };
 </script>

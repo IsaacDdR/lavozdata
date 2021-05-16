@@ -10,20 +10,19 @@ export default {
       { charset: "utf-8" },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1, user-scalable=no"
+        content: "width=device-width, initial-scale=1, user-scalable=no",
       },
       {
-        hid:
-          "La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
+        hid: "La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
         name: "La voz Universal la estacion de radio favorita de los mexicanos",
-        content: ""
-      }
+        content: "",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   googleAnalytics: {
-    id: "G-7XPGVY5Y84"
+    id: "G-7XPGVY5Y84",
   },
 
   googleFonts: {
@@ -33,9 +32,9 @@ export default {
       Lato: [100, 300],
       Raleway: {
         wght: [100, 400],
-        ital: [100]
-      }
-    }
+        ital: [100],
+      },
+    },
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -53,18 +52,23 @@ export default {
 
     "@nuxtjs/google-analytics",
 
-    "nuxt-vite"
+    "nuxt-vite",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    "@nuxtjs/axios",
+
     "@nuxt/content",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
 
-    "@nuxtjs/google-fonts"
+    "@nuxtjs/google-fonts",
   ],
 
+  axios: {
+    baseURL: "https://lavoz-app.herokuapp.com",
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
@@ -72,14 +76,14 @@ export default {
       short_name: "La Voz Universal",
       lang: "es",
       icons: ["static/favicon.png"],
-      theme_color: "#a3dcff"
-    }
+      theme_color: "#a3dcff",
+    },
   },
 
   server: {
-    host: "0"
+    host: "0",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
 };
