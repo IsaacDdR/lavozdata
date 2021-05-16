@@ -34,12 +34,15 @@
       class="sr-only lg:not-sr-only"
     >
       <section class="mx-auto text-gray-600 body-font">
-        <div class="flex px-5 py-24 mx-auto flex flex-col">
-          <div class="bg-white rounded-lg lg:w-1/2 mx-auto">
-            <div class="rounded-t-lg h-72 shadow overflow-hidden">
+        <div class="flex pt-12 px-5 mx-auto flex flex-col">
+          <div class="shadow-lg bg-white rounded-lg lg:w-3/4 mx-auto">
+            <p class="text-bold text-2xl ml-4 p-4 text-black">
+              Un día como hoy en {{ person.year }}
+            </p>
+            <div class=" h-72 shadow overflow-hidden">
               <img
                 alt="content"
-                class="object-cover object-center h-full w-full"
+                class="shadow object-cover object-center h-full w-full"
                 :src="person.portrait"
               />
             </div>
@@ -98,16 +101,16 @@
 
     <!--::::::::::::::::::::Efemerides::::::::::::::::::::::::-->
     <div class="lg:sr-only w-full" v-for="person of persons" :key="person.slug">
-      <p class="text-bold text-3xl ml-4 pt-4 text-center">
-        Un día como hoy...
-      </p>
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/2 mx-auto">
           <div
-            class="bg-white bg-opacity-75 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
+            class="shadow-lg bg-white bg-opacity-75 h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
           >
+            <p class="text-bold text-2xl p-4 text-left">
+              Un día como hoy en {{ person.year }}
+            </p>
             <img
-              class="lg:h-48 md:h-36 w-full object-cover object-center"
+              class="shadow lg:h-48 md:h-36 w-full object-cover object-center"
               :src="person.image"
               alt="blog"
             />
@@ -188,22 +191,54 @@
         </div>
       </div>
     </div>
-    <div class="mx-auto flex flex-col md:flex-row md:w-3/4 pt-10 font-serif">
+    <div class="mx-auto flex flex-col md:flex-col md:w-3/4 pt-20 font-serif">
+      <h1
+        class="text-blue-400 pb-10 text-center text-4xl font-extrabold mx-auto"
+      >
+        Adolfo Fernández Zepeda
+      </h1>
       <div class="text-center text-white mx-auto">
         <img
-          class="mx-auto w-1/2 md:w-3/4 rounded-xl shadow-xl border-gray-500 border-8"
+          class="mx-auto w-1/2 md:w-1/4 rounded-full shadow-xl border-blue-500 border-8"
           src="~/assets/adolfo.jpg"
           alt="Adolfo"
         />
-        <div class="py-5 w-100 italic text-black text-bold text-xl">
-          <p>
-            He sido la voz unisal desde
-          </p>
-        </div>
-      </div>
-      <div class="mx-auto text-center">
-        <h1 class="text-white text-4xl py-3">Adolfo Fernández Zepeda</h1>
-        <p class="text-white">Texto!</p>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-12 mx-auto">
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="inline-block w-8 h-8 text-gray-400 mb-8"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed text-lg">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware. Man bun next level
+                coloring book skateboard four loko knausgaard. Kitsch keffiyeh
+                master cleanse direct trade indigo juice before they sold out
+                gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean
+                shorts. Slow-carb next level shoindigoitch ethical authentic, yr
+                scenester sriracha forage franzen organic drinking vinegar.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"
+              ></span>
+              <h2
+                class="text-gray-900 font-medium title-font tracking-wider text-sm"
+              >
+                HOLDEN CAULFIELD
+              </h2>
+              <p class="text-gray-500">Senior Product Designer</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>

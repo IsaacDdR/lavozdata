@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat ">
+  <div class="bg-white md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat">
     <div
-      class="bg-transparent fixed w-full z-10"
-      :class="{ 'bg-gray-800': !view.topOfPage }"
+      class="bg-transparent fixed w-full z-20"
+      :class="{ 'bg-blue-400': !view.topOfPage }"
     >
       <div
         class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
@@ -72,7 +72,17 @@
                 >Acerca</NuxtLink
               >
             </li>
+            <li>
+              <NuxtLink
+                to="/artists"
+                aria-label="Efemerides"
+                title="Efemerides"
+                class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                >Efemérides</NuxtLink
+              >
+            </li>
           </ul>
+          <!--
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
@@ -85,6 +95,7 @@
               </a>
             </li>
           </ul>
+          -->
           <div class="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -135,7 +146,7 @@
                         </svg>
                         <span
                           class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
-                          >Company</span
+                          >La Voz Universal</span
                         >
                       </a>
                     </div>
@@ -194,6 +205,16 @@
                         >
                       </li>
                       <li>
+                        <NuxtLink
+                          to="/artists"
+                          aria-label="Efemerides"
+                          title="Efemerides"
+                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >Efemérides</NuxtLink
+                        >
+                      </li>
+                      <!--
+                      <li>
                         <a
                           href="/"
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
@@ -203,6 +224,7 @@
                           Sign up
                         </a>
                       </li>
+                      -->
                     </ul>
                   </nav>
                 </div>
