@@ -1,9 +1,9 @@
 <template>
   <section class="text-gray-600 body-font relative">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12 mt-6">
+    <div class="container px-5 pt-20 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12 mt-4">
         <h1
-          class="sm:text-4xl text-2xl font-medium title-font mb-4 text-blue-600"
+          class="sm:text-5xl text-2xl font-extrabold title-font mb-4 text-blue-600"
         >
           Contáctanos
         </h1>

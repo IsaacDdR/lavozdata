@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-gray-600 body-font">
+  <footer class="text-gray-900 body-font">
     <div
       class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
     >
@@ -23,21 +23,21 @@
         <span class="ml-3 text-xl">Tailblocks</span>
       </a>
       <p
-        class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        class="text-sm text-gray-900 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-900 sm:py-2 sm:mt-0 mt-4"
       >
-        © 2020 Tailblocks —
+        © Todos los derechos reservados 2021 La Voz Universal —
         <a
           href="https://twitter.com/knyttneve"
-          class="text-gray-600 ml-1"
+          class="text-gray-900 ml-1"
           rel="noopener noreferrer"
           target="_blank"
-          >@knyttneve</a
+          >@cintatic</a
         >
       </p>
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
       >
-        <a class="text-gray-500">
+        <a class="text-gray-900 hover:text-blue-600">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -51,7 +51,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-900 hover:text-blue-600">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -65,7 +65,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-900 hover:text-blue-600">
           <svg
             fill="none"
             stroke="currentColor"

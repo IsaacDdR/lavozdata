@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat">
+  <div class="bg-white md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat ">
     <div
       class="bg-transparent fixed w-full z-10"
       :class="{ 'bg-gray-800': !view.topOfPage }"
@@ -8,8 +8,8 @@
         class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
       >
         <div class="relative flex items-center justify-between">
-          <a
-            href="/"
+          <NuxtLink
+            to="/"
             aria-label="Company"
             title="Company"
             class="inline-flex items-center"
@@ -30,11 +30,11 @@
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg>
             <span
-              class="ml-2 text-xl font-bold tracking-wide uppercase"
-              :class="{ 'text-gray-600': !view.topOfPage }"
-              >Company</span
+              class="ml-2 text-xl font-bold tracking-wide mx-auto text-center"
+              :class="{ 'text-white': !view.topOfPage }"
+              >La Voz Universal</span
             >
-          </a>
+          </NuxtLink>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <NuxtLink
@@ -46,30 +46,30 @@
               >
             </li>
             <li>
-              <a
-                href="/"
+              <NuxtLink
+                to="/gallery"
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-                >Features</a
+                >Galería</NuxtLink
               >
             </li>
             <li>
-              <a
-                href="/"
+              <NuxtLink
+                to="/blog"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-                >Pricing</a
+                >Blog</NuxtLink
               >
             </li>
             <li>
-              <a
-                href="/"
+              <NuxtLink
+                to="/about"
                 aria-label="About us"
                 title="About us"
                 class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
-                >About us</a
+                >Acerca</NuxtLink
               >
             </li>
           </ul>
@@ -167,30 +167,30 @@
                         >
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NuxtLink
+                          to="/gallery"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >Features</a
+                          >Galería</NuxtLink
                         >
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NuxtLink
+                          to="/blog"
                           aria-label="Product pricing"
                           title="Product pricing"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >Pricing</a
+                          >Blog</NuxtLink
                         >
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <NuxtLink
+                          to="/about"
                           aria-label="About us"
                           title="About us"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >About us</a
+                          >Acerca</NuxtLink
                         >
                       </li>
                       <li>
@@ -212,12 +212,14 @@
         </div>
       </div>
     </div>
-    <Nuxt />
+    <transition name="fade-slow">
+      <Nuxt />
+    </transition>
+    <Footer />
   </div>
 </template>
 <script>
 export default {
-  transition: "fade",
   data() {
     return {
       isMenuOpen: false,
@@ -236,7 +238,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.pageYOffset > 75) {
+      if (window.pageYOffset > 20) {
         if (this.view.topOfPage) this.view.topOfPage = false;
       } else {
         if (!this.view.topOfPage) this.view.topOfPage = true;
@@ -248,10 +250,18 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s;
+  transition: opacity 0.1s;
 }
 .fade-enter,
 .fade-leave-active {
+  opacity: 0;
+}
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-slow-enter,
+.fade-slow-leave-active {
   opacity: 0;
 }
 </style>

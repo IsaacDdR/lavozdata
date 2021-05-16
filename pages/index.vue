@@ -206,12 +206,11 @@
         <p class="text-white">Texto!</p>
       </div>
     </div>
-    <Redes />
-    <Footer />
   </div>
 </template>
 <script>
 export default {
+  layout: "inicio",
   async asyncData({ $content, params }) {
     const current = new Date();
     const todayDay = current.getDate();
@@ -234,3 +233,21 @@ export default {
   }
 };
 </script>
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.1s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.fade-slow-enter-active,
+.fade-slow-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-slow-enter,
+.fade-slow-leave-active {
+  opacity: 0;
+}
+</style>
