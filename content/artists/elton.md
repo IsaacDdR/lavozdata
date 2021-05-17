@@ -1,12 +1,14 @@
 ---
 year: 1947
+realMonth: 3
 name: Elton Jhon
 day: 25
 month: 2
 frase: La música tiene poder curativo. Tiene la capacidad de sacar a las personas de sí mismas durante unas horas.
 slug: elton
 resumen: Elton John es un cantante, pianista, compositor y músico británico.​​​ Ha vendido más de 300 millones de copias en todo el mundo.
-image: https://res.cloudinary.com/duruqkfg4/image/upload/v1621048450/elton_yq77yg.jpg
+portrait: https://res.cloudinary.com/duruqkfg4/image/upload/v1621231935/elton-sit_cmdfs7.webp
+imageCircle: https://res.cloudinary.com/duruqkfg4/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/elton_mxwhwf.webp
 ---
 
 Elton John nació dentro de una familia muy aficionada a la música. Su padre había sido trompetista en una banda militar. A los cuatro años, empezó a tomar lecciones de piano y, desde entonces jamás ha separado sus dedos de las teclas color marfil y ébano. <!--more--> A los once años le dieron una beca para estudiar en la prestigiosa Royal Academy de Londres. Cuando comenzó a perder la vista algo, que habitualmente, acompleja a los niños-, él no solamente no intentó ocultarlo, sino que eligió el modelo de gafas más llamativo, iguales a las que utilizaba su ídolo en esos momentos: Buddy Holly. Desde pequeño supo imprimir una seña de identidad que aún hoy le hace inconfundible.

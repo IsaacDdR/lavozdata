@@ -52,16 +52,12 @@
           >
             <img class="w-3/4 mx-auto pb-5" :src="artist.imageCircle" />
             <h1
-              class="
-                title-font
-                sm:text-2xl
-                text-xl
-                font-medium
-                text-gray-900
-                mb-3
-              "
+              class="title-font text-3xl text-xl font-medium text-gray-900 mb-3"
             >
               {{ artist.name }}
+              <p class="text-xl">
+                {{ artist.day + "/" + artist.realMonth + "/" + artist.year }}
+              </p>
             </h1>
             <p class="leading-relaxed mb-3">
               {{ '"' + artist.frase + '"' }}

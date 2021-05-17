@@ -15,26 +15,7 @@
     >
       <div class="max-w-xl mx-auto lg:max-w-screen-xl">
         <div class="mb-16 lg:max-w-lg lg:mb-0">
-          <div class="max-w-xl mb-6">
-            <div>
-              <p
-                class="
-                  inline-block
-                  px-3
-                  py-px
-                  mb-4
-                  text-xs
-                  font-semibold
-                  tracking-wider
-                  text-teal-900
-                  uppercase
-                  rounded-full
-                  bg-teal-accent-400
-                "
-              >
-                Brand new
-              </p>
-            </div>
+          <div class="max-w-xl mb-6 mt-8">
             <h2
               class="
                 max-w-lg
@@ -50,7 +31,7 @@
             >
               {{ artist.name }}
             </h2>
-            <p class="text-base text-gray-700 md:text-lg">
+            <p class="text-base text-gray-900 md:text-lg">
               {{ artist.description }}
             </p>
           </div>
@@ -66,21 +47,22 @@
                 mr-6
                 font-medium
                 tracking-wide
-                text-white
+                font-semibold
                 transition
                 duration-200
                 rounded
                 shadow-md
-                bg-deep-purple-accent-400
-                hover:bg-deep-purple-accent-700
+                bg-blue-500
+                text-white
+                hover:bg-blue-700
                 focus:shadow-outline
                 focus:outline-none
               "
             >
-              Get started
+              Inicio
             </a>
-            <a
-              href="/"
+            <NuxtLink
+              to="/blog"
               aria-label=""
               class="
                 inline-flex
@@ -91,7 +73,7 @@
                 text-deep-purple-accent-400
                 hover:text-deep-purple-800
               "
-              >Learn more</a
+              >Blog</NuxtLink
             >
           </div>
         </div>

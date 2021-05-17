@@ -1,5 +1,5 @@
 <template>
-  <article class="pt-24">
+  <article class="pt-20">
     <template>
       <div class="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
         <div
@@ -14,7 +14,7 @@
             lg:max-w-screen-xl
           "
         >
-          <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+          <div class="mb-16">
             <div class="max-w-xl mb-6">
               <h2
                 class="
@@ -29,9 +29,43 @@
                   sm:leading-none
                 "
               >
-                {{ artist.name }}
+                <div
+                  class="
+                    inset-y-0
+                    right-0
+                    w-full
+                    max-w-xl
+                    px-4
+                    mx-auto
+                    lg:pl-8
+                    lg:pr-0
+                    lg:mb-0
+                    lg:mx-0
+                    lg:w-1/2
+                    lg:max-w-full
+                    lg:absolute
+                    xl:px-0
+                  "
+                >
+                  <img
+                    class="
+                      object-cover
+                      w-full
+                      h-56
+                      rounded
+                      shadow-lg
+                      lg:rounded-none
+                      lg:shadow-none
+                      sm:h-96
+                      lg:h-full
+                    "
+                    :src="artist.portrait"
+                    alt=""
+                  />
+                </div>
+                <p class="ml-5 mt-4">{{ artist.name }}</p>
               </h2>
-              <p class="text-base text-gray-900 md:text-lg text-justify">
+              <p class="text-base mx-5 text-gray-900 md:text-lg text-justify">
                 <nuxt-content :document="artist" />
               </p>
             </div>
@@ -56,7 +90,7 @@
                   md:w-auto
                   md:mr-4
                   md:mb-0
-                  bg-deep-purple-accent-400
+                  bg-blue-400
                   hover:bg-deep-purple-accent-700
                   focus:shadow-outline
                   focus:outline-none
@@ -64,8 +98,8 @@
               >
                 Inicio
               </a>
-              <a
-                href="/"
+              <NuxtLink
+                to="/artists"
                 aria-label=""
                 class="
                   inline-flex
@@ -76,44 +110,10 @@
                   duration-200
                   hover:text-deep-purple-accent-700
                 "
-                >Más efemérides</a
+                >Más efemérides</NuxtLink
               >
             </div>
           </div>
-        </div>
-        <div
-          class="
-            inset-y-0
-            right-0
-            w-full
-            max-w-xl
-            px-4
-            mx-auto
-            lg:pl-8
-            lg:pr-0
-            lg:mb-0
-            lg:mx-0
-            lg:w-1/2
-            lg:max-w-full
-            lg:absolute
-            xl:px-0
-          "
-        >
-          <img
-            class="
-              object-cover
-              w-full
-              h-56
-              rounded
-              shadow-lg
-              lg:rounded-none
-              lg:shadow-none
-              sm:h-96
-              lg:h-full
-            "
-            src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt=""
-          />
         </div>
       </div>
     </template>

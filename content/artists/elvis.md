@@ -1,12 +1,12 @@
 ---
 year: 1935
 name: Elvis Presley
-day: 17
-month: 4
+day: 8
+month: 0
+realMonth: 1
 frase: La música Rock and Roll, si te gusta, si la sientes, no puedes evitar pasar a ella. Eso es lo que me pasa. No puedo evitarlo.
 slug: elvis
 resumen: Nacido en Tupelo, Misisipi; 8 de enero de 1935. Fallece en Memphis, Tennessee; 16 de agosto de 1977.
-image: https://res.cloudinary.com/duruqkfg4/image/upload/v1621056802/elvis_ckm3wq.webp
 portrait: https://res.cloudinary.com/duruqkfg4/image/upload/v1621092854/elivs-hero_hwnvtl.webp
 imageCircle: https://res.cloudinary.com/duruqkfg4/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/elvis_ckm3wq.webp
 ---

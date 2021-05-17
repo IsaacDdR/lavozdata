@@ -1,11 +1,33 @@
 ---
-year: 1964
+year: 1958
 name: Michael Jackson
-day: 15
-month: 6
-frase: "Hee, hee"
+day: 29
+month: 7
+realMonth: 8
+frase: Mi música pretende unir todas las razas, para que todos vivamos como una gran familia.
 slug: michael
-description: Un degenerado mental que no pudo soportar de idea de ser negro, por el asco que se daba a sí mismo te aventó en uns psicina de cloro hasta blanquearse para poder abusar de niños sin tener tantas repercusiones, murió por marica.
+resumen: Michael Joseph Jackson​ fue un cantante, compositor, productor discográfico, bailarín, actor y filántropo estadounidense.​​​
+imageCircle: https://res.cloudinary.com/duruqkfg4/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1621231974/8_cqjefw.webp
+portrait: https://res.cloudinary.com/duruqkfg4/image/upload/v1621231974/9_smawps.webp
 ---
 
-Los ogros no viven felices por siempre
+Nacido el 29 de agosto de 1958 en Gary, Indiana (Estados Unidos), Michael Joseph Jackson era el séptimo de los nueve hijos de Joseph y Katherine Jackson. Comenzó su carrera siendo sólo un niño de 11 años junto a sus hermanos en los Jackson Five, con quienes lanzó temas de éxito como I Want You Back o ABC. <!--more--> Sin embargo, ya a la edad de cinco años había mostrado un increíble talento para la canción en una función navideña del colegio. La presión de las ventas, la fama, las disputas con sus hermanos, compañeros de viaje en los Jackson Five, todo formó parte indisoluble de una niñez que culminó cuando a los doce años ya era considerado toda una estrella mundial. Como dato anecdótico de lo que fueron los Jackson Five, y luego él en solitario, algunas cifras de ventas escalofriantes que ya quisieran para sí muchos músicos consagrados: los cinco hermanos Jackson vendieron, mientras actuaron juntos bajo el patrocinio de Diana Ross, más de cien millones de copias.
+
+La fama mundial le llegó con su carrera como solista, que inició en 1979 con el disco Off The Wall, que incluía éxitos como Don't Stop 'Til You Get Enough y Rock With You. Su segundo álbum, Thriller, de 1982, es el disco más vendido de la historia. Sus posteriores trabajos -Bad (1987), Dangerous (1991) y History (1995)- también alcanzaron ventas millonarias en todo el mundo.
+
+Con un estilo y personalidad únicos, Michael Jackson es un icono en la historia de la música que ha influido en multitud de artistas de posteriores generaciones. Enigmático, ambiguo, misterioso con sus grandes manías y sus toques de generosidad, Jackson ganó 13 Premios Grammy y vendió alrededor de 750 millones de discos. También destacó por su labor solidaria, ayudando a multitud de causas benéficas a través de su fundación, sobre todo a aquellas relacionadas con la infancia. La fama le trajo la adoración del público y su estilo, siempre original y rompedor (ha llegado a obsesionarse con la cirugía estética), marcó tendencia, mientras Neverland, su enorme rancho, se convertía en símbolo y lugar de peregrinación de sus fieles fans, al igual que Graceland lo fue para los seguidores de Elvis.
+
+Pero más que su vida profesional, desde los años 90 era su vida personal la que acaparaba los titulares debido a su excéntrico estilo de vida. Su figura se vio envuelta en el escándalo tras ser acusado en dos ocasiones de abusos a menores: la primera, en 1993, por la que no fue juzgado debido a falta de pruebas; y la segunda, en 2005, por la que fue juzgado y absuelto. Desde entonces su vida ha girado en torno a la polémica y en 2008 perdió definitivamente su rancho de Neverland por no poder afrontar deudas de más de 20 millones de euros.
+
+En 1993, Jackson se casó en secreto en la República Dominicana con Lisa Marie Presley, hija única de Elvis Presley. Este enlace hizo que la opinión publica se dividiera en dos: la de aquellos que veían en la unión una maniobra publicitaria para lograr que Michael volviera a ser la estrella de siempre; y la de sus seguidores que encontraron en este matrimonio una bonita historia de amor que enlazaba al rey del pop con el rey del rock. La pareja rompió dos años después en términos amistosos. En 1997, el cantante volvió a casarse, esta vez con la enfermera Deborah Jeanne Rowe, con quien tuvo a sus dos hijos mayores: Michael Joseph Jackson, Jr. (también llamado “Prince”), y Paris Michael Katherine Jackson. Se divorciaron en 1999, y Rowe le otorgó a Jackson la custodia total de los niños. Su tercer hijo, Prince Michael Jackson II, nació en 2002 sin que el artista revelase la identidad de la madre del niño, aunque llegó a decirse que había utilizado una madre de alquiler.
+
+A finales del2008, y después de que muchos medios especularan con la posibilidad de que Michael Jackson sufría una enfermedad de origen genético y necesitaba con urgencia un trasplante de pulmón, el portavoz oficial del artista envió un comunicado en el que desmentía rotundamente tales informaciones. Los rumores sobre su estado de salud fueron continuos durante el 2008 y principios de 2009 (se dijo que tenía una bacteria que estaba destruyendo su piel y cáncer de pulmón), sin embargo, representantes y responsables de su última gira This It Is, que nunca llegó a celebrarse debido a su repentino fallecimiento, desmintieron cada uno de ellos. Pero sus excentricidades y apariciones públicas, aunque escasas, siguieron levantando comentarios.
+Sin embargo, el repentino anuncio de una gira de despedida, hizo a Michael callar muchas bocas. Tras varios baches en su carrera, en el 2009, el rey del pop prometía, en una multitudinaria rueda de prensa, volver con fuerza. Con la misma con la que empuñaba un micrófono cuando apenas despuntaba del suelo. Michael anunció que estaba preparando una gira de cerca de 50 conciertos en el O2 Arena, de Londres, donde pensaba despedirse por todo lo alto de los escenarios tocando las canciones que querían sus fans.
+
+Michael se puso manos a la obra para obsequiar a sus fans con lo que mejor sabia hacer, cantar y bailar. Jackson ensayaba coreografías y preparaba un espectáculo que prometía dejar a todos con la boca abierta. Siguiendo de cerca sus ensayos estaban sus hijos con los que disfrutaba del tiempo que el trabajo le dejaba libre. Sin embargo una intoxicación del anestésico propofol en combinación con otros medicamentos suministrada por su medido personal Conrad Murray acabo con su vida el 25 de junio de 2009, dejando a medias la última gran actuación de su vida.
+
+Su repentina muerte conmocionó al mundo, y en todos los rincones del planeta alguien lloraba la muerte del rey del pop. Su funeral celebrado el 6 de julio de 2009 en el estadio Staples Center, se convirtió en un homenaje a su música, en una reunión de amigos y en un adiós multitudinario. Allí estuvieron sus hijos, sus padres, sus hermanos y todos aquellos que en algún momento de su vida compartieron algunos minutos con Michael.
+
+Y tras una exhaustiva autopsia y algo más de dos meses después de su repentina muerte, el 3 septiembre de 2009, el cuerpo del rey del pop fue enterrado en el cementerio Forest Lawn de Glendale de Los Ángeles. Al entierro, de carácter íntimo y custodiado por fuertes medidas de seguridad, acudieron alrededor de un centenar de personas entre los que se encontraban los familiares y amigos más íntimos del rey del pop, entre ellos Corey Feldman, Brooke Shields, Lisa Marie Presley, Mila Kunis, Chris Tucker, Steve Wonder , Elizabeth Taylor y Diana Ross.
+
+El sepelio estuvo presidido por el féretro bañado en oro del artista y ‘custodiado’ por dos grandes imágenes del rey del pop y durante la ceremonia la música de Michael fue la banda sonora.
