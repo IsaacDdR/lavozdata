@@ -6,7 +6,16 @@
         :class="{ 'bg-blue-400 shadow': !view.topOfPage }"
       >
         <div
-          class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+          class="
+            px-4
+            py-5
+            mx-auto
+            sm:max-w-xl
+            md:max-w-full
+            lg:max-w-screen-xl
+            md:px-24
+            lg:px-8
+          "
         >
           <div class="relative flex items-center justify-between">
             <NuxtLink
@@ -42,7 +51,13 @@
                   to="/contact"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                  class="
+                    font-medium
+                    tracking-wide
+                    transition-colors
+                    duration-200
+                    hover:text-teal-accent-400
+                  "
                   >Contacto</NuxtLink
                 >
               </li>
@@ -51,7 +66,13 @@
                   to="/gallery"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                  class="
+                    font-medium
+                    tracking-wide
+                    transition-colors
+                    duration-200
+                    hover:text-teal-accent-400
+                  "
                   >Galería</NuxtLink
                 >
               </li>
@@ -60,7 +81,13 @@
                   to="/blog"
                   aria-label="Product pricing"
                   title="Product pricing"
-                  class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                  class="
+                    font-medium
+                    tracking-wide
+                    transition-colors
+                    duration-200
+                    hover:text-teal-accent-400
+                  "
                   >Blog</NuxtLink
                 >
               </li>
@@ -69,7 +96,13 @@
                   to="/about"
                   aria-label="About us"
                   title="About us"
-                  class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                  class="
+                    font-medium
+                    tracking-wide
+                    transition-colors
+                    duration-200
+                    hover:text-teal-accent-400
+                  "
                   >Acerca</NuxtLink
                 >
               </li>
@@ -78,7 +111,13 @@
                   to="/artists"
                   aria-label="Efemerides"
                   title="Efemerides"
-                  class="font-medium tracking-wide transition-colors duration-200 hover:text-teal-accent-400"
+                  class="
+                    font-medium
+                    tracking-wide
+                    transition-colors
+                    duration-200
+                    hover:text-teal-accent-400
+                  "
                   >Efemérides</NuxtLink
                 >
               </li>
@@ -101,7 +140,15 @@
               <button
                 aria-label="Open Menu"
                 title="Open Menu"
-                class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
+                class="
+                  p-2
+                  -mr-1
+                  transition
+                  duration-200
+                  rounded
+                  focus:outline-none
+                  focus:shadow-outline
+                "
                 @click="isMenuOpen = true"
               >
                 <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -146,8 +193,15 @@
                             <rect x="14" y="11" width="7" height="12"></rect>
                           </svg>
                           <span
-                            class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
-                            >Company</span
+                            class="
+                              ml-2
+                              text-xl
+                              font-bold
+                              tracking-wide
+                              text-gray-800
+                              uppercase
+                            "
+                            >La Voz Universal</span
                           >
                         </a>
                       </div>
@@ -155,7 +209,18 @@
                         <button
                           aria-label="Close Menu"
                           title="Close Menu"
-                          class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                          class="
+                            p-2
+                            -mt-2
+                            -mr-2
+                            transition
+                            duration-200
+                            rounded
+                            hover:bg-gray-200
+                            focus:bg-gray-200
+                            focus:outline-none
+                            focus:shadow-outline
+                          "
                           @click="isMenuOpen = false"
                         >
                           <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -174,7 +239,14 @@
                             to="/contact"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="
+                              font-medium
+                              tracking-wide
+                              text-gray-700
+                              transition-colors
+                              duration-200
+                              hover:text-deep-purple-accent-400
+                            "
                             >Contacto</NuxtLink
                           >
                         </li>
@@ -183,7 +255,14 @@
                             to="/gallery"
                             aria-label="Our product"
                             title="Our product"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="
+                              font-medium
+                              tracking-wide
+                              text-gray-700
+                              transition-colors
+                              duration-200
+                              hover:text-deep-purple-accent-400
+                            "
                             >Galería</NuxtLink
                           >
                         </li>
@@ -192,7 +271,14 @@
                             to="/blog"
                             aria-label="Product pricing"
                             title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="
+                              font-medium
+                              tracking-wide
+                              text-gray-700
+                              transition-colors
+                              duration-200
+                              hover:text-deep-purple-accent-400
+                            "
                             >Blog</NuxtLink
                           >
                         </li>
@@ -201,7 +287,14 @@
                             to="/about"
                             aria-label="About us"
                             title="About us"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="
+                              font-medium
+                              tracking-wide
+                              text-gray-700
+                              transition-colors
+                              duration-200
+                              hover:text-deep-purple-accent-400
+                            "
                             >Acerca</NuxtLink
                           >
                         </li>
@@ -210,7 +303,14 @@
                             to="/artists"
                             aria-label="Efemerides"
                             title="Efemerides"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="
+                              font-medium
+                              tracking-wide
+                              text-gray-700
+                              transition-colors
+                              duration-200
+                              hover:text-deep-purple-accent-400
+                            "
                             >Efemérides</NuxtLink
                           >
                         </li>
@@ -246,14 +346,14 @@ export default {
     return {
       isMenuOpen: false,
       view: {
-        topOfPage: true
-      }
+        topOfPage: true,
+      },
     };
   },
   watch: {
     $route() {
       this.isMenuOpen = false;
-    }
+    },
   },
   beforeMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -265,8 +365,8 @@ export default {
       } else {
         if (!this.view.topOfPage) this.view.topOfPage = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style>

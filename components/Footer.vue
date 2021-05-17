@@ -39,6 +39,7 @@
           sm:py-2
           sm:mt-0
           mt-4
+          text-center
         "
       >
         © Todos los derechos reservados 2021 —

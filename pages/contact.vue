@@ -3,11 +3,26 @@
     <div class="flex flex-col px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-12">
         <h1
-          class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+          class="
+            sm:text-5xl
+            text-2xl
+            font-extrabold
+            title-font
+            mb-4
+            text-gray-900
+          "
         >
           Contáctanos
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-900">
+        <p
+          class="
+            lg:w-2/3
+            mx-auto
+            leading-relaxed
+            text-base text-gray-900
+            font-bold
+          "
+        >
           En redes sociales, email o teléfono te atenderemos con mucho gusto.
         </p>
       </div>
@@ -36,7 +51,9 @@
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
               <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-900"
+                <label
+                  for="name"
+                  class="leading-7 text-sm text-gray-900 font-bold"
                   >Nombre</label
                 >
                 <input
@@ -68,7 +85,9 @@
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
-                <label for="email" class="leading-7 text-sm text-gray-900"
+                <label
+                  for="email"
+                  class="leading-7 text-sm text-gray-900 font-bold"
                   >Email</label
                 >
                 <input
@@ -100,7 +119,9 @@
             </div>
             <div class="p-2 w-full">
               <div class="relative">
-                <label for="message" class="leading-7 text-sm text-gray-900"
+                <label
+                  for="message"
+                  class="leading-7 text-sm text-gray-900 font-bold"
                   >Mensaje</label
                 >
                 <textarea

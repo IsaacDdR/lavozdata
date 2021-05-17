@@ -9,12 +9,12 @@
             font-extrabold
             title-font
             mb-4
-            text-blue-600
+            text-gray-900
           "
         >
           Galería
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base font-bold">
           Recuerdos a través del tiempo
         </p>
       </div>

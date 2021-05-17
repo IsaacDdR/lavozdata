@@ -53,6 +53,8 @@ export default {
     "@nuxtjs/google-analytics",
 
     "nuxt-vite",
+
+    "@nuxtjs/moment",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -81,7 +83,7 @@ export default {
   },
 
   server: {
-    host: "0",
+    host: "0.0.0.0",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
