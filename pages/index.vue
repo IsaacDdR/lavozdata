@@ -128,7 +128,8 @@
             "
           >
             <p class="text-bold text-2xl p-4 text-left">
-              Un día como hoy, {{ $moment }} en {{ person.year }}
+              Un día como hoy, en
+              {{ person.year }}
             </p>
             <img
               class="shadow lg:h-48 md:h-36 w-full object-cover object-center"
@@ -257,6 +258,7 @@
 <script>
 export default {
   layout: "inicio",
+
   async asyncData({ $content, params }) {
     const current = new Date();
     const todayDay = current.getDate();

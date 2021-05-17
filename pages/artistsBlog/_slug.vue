@@ -16,25 +16,6 @@
         >
           <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
             <div class="max-w-xl mb-6">
-              <div>
-                <p
-                  class="
-                    inline-block
-                    px-3
-                    py-px
-                    mb-4
-                    text-xs
-                    font-semibold
-                    tracking-wider
-                    text-teal-900
-                    uppercase
-                    rounded-full
-                    bg-teal-accent-400
-                  "
-                >
-                  New Colaboration
-                </p>
-              </div>
               <h2
                 class="
                   max-w-lg
@@ -50,7 +31,7 @@
               >
                 {{ artist.name }}
               </h2>
-              <p class="text-base text-gray-700 md:text-lg">
+              <p class="text-base text-gray-900 md:text-lg text-justify">
                 <nuxt-content :document="artist" />
               </p>
             </div>
@@ -81,7 +62,7 @@
                   focus:outline-none
                 "
               >
-                Apply Now
+                Inicio
               </a>
               <a
                 href="/"
@@ -95,7 +76,7 @@
                   duration-200
                   hover:text-deep-purple-accent-700
                 "
-                >Learn more</a
+                >Más efemérides</a
               >
             </div>
           </div>
