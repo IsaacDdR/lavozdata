@@ -2,7 +2,7 @@
 name: La historia de la radio
 slug: historia-radio
 resumen: Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie. Eros pharetra habitasse urna sollicitudin neque leo orci sem.
-image: https://res.cloudinary.com/duruqkfg4/image/upload/v1621048450/elton_yq77yg.jpg
+image: https://preprod.teranganews.sn/wp-content/uploads/2018/02/radio-ok.jpg
 ---
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie. Eros pharetra habitasse urna sollicitudin neque leo orci sem, maecenas molestie primis auctor lacus magna vitae mattisresumen auctor lacus.

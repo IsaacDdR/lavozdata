@@ -25,6 +25,6 @@ Joey fue integrante de esta banda desde la fundación hasta su muerte (1976-1996
 En un principio tocaba la batería, pero los mismos integrantes de la banda lo convencieron para que hiciera algo en lo que realmente se destacaba, cantar. Tenía una voz muy particular, admirada por grandes cantantes que reconocen ser fanáticos de él.
 <br />
 <br />
-Su vida terminó el día 15 de Abril del 2001, en el New York-Presbyterian Hospital , a causa de cáncer linfático que mantuvo durante algunos años, hasta que finalmente la enfermedad lo venció.
+Su vida terminó el día 15 de Abril del 2001, en el New York-Presbyterian Hospital, a causa de cáncer linfático que mantuvo durante algunos años, hasta que finalmente la enfermedad lo venció.
 
 </p>

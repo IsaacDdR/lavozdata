@@ -10,7 +10,7 @@ export default {
       { charset: "utf-8" },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1, user-scalable=no",
+        content: "width=device-width, initial-scale=1",
       },
       {
         hid: "La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
@@ -69,6 +69,12 @@ export default {
 
     "@nuxtjs/google-fonts",
   ],
+
+  router: {
+    scrollBehavior: function (to, from, savedPosition) {
+      return { x: 0, y: 0 };
+    },
+  },
 
   fontawesome: {
     icons: {

@@ -2,7 +2,7 @@
 name: Música del mundo
 slug: musica-mundo
 resumen: Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie. Eros pharetra habitasse urna sollicitudin neque leo orci sem,
-image: https://res.cloudinary.com/duruqkfg4/image/upload/v1621048450/elton_yq77yg.jpg
+image: https://www.music-academy.cl/wp-content/uploads/2019/08/Lee-Scratch-Perry.jpg
 ---
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie. Eros pharetra habitasse urna sollicitudin neque leo orci sem, maecenas molestie primis auctor lacus magna vitae mattis.

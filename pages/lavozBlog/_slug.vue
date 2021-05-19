@@ -13,7 +13,7 @@
         md:max-w-full
       "
     >
-      <span class="ml-2 md:ml-16 text-xl active:shadow-inner noSelect">
+      <span class="ml-2 md:ml-2 text-xl active:shadow-inner noSelect">
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
         <NuxtLink class="text-bold" to="/blog"> Blog</NuxtLink>
       </span>
@@ -98,7 +98,7 @@
         "
       >
         <img
-          src="https://kitwind.io/assets/kometa/full-browser.png"
+          :src="artist.image"
           class="
             object-cover object-top
             w-full
@@ -122,6 +122,7 @@
 </template>
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ $content, params }) {
     const artist = await $content("blog", params.slug).fetch();
     return { artist };

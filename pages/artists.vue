@@ -89,6 +89,7 @@
 </template>
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ $content }) {
     const artists = await $content("artists").fetch();
     return { artists };

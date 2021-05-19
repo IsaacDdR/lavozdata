@@ -2,7 +2,7 @@
 name: Un buen audio
 slug: audio
 resumen: Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie. Eros pharetra habitasse urna sollicitudin neque leo orci sem, maecenas molestie primis auctor lacus magna vitae mattis.
-image: https://res.cloudinary.com/duruqkfg4/image/upload/v1621048450/elton_yq77yg.jpg
+image: https://usa.sae.edu/assets/Uploads/_resampled/croppedimage700400-pexelsskitterphoto675960edit2.jpg
 ---
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus blandit scelerisque, in nascetur nam laoreet cubilia vel cursus molestie mattisresumen auctor lacusurna sollicitudin neque leo orci sem dapibus luctus at varius facilisi nullam nulla sapien netus.

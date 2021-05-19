@@ -29,7 +29,7 @@
           mt-4
         "
       >
-        Recuerdos a través del tiempo
+        Datos, pensamientos y redacciones.
       </p>
     </div>
     <div class="flex flex-wrap mt-5">
@@ -50,7 +50,7 @@
           >
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://dummyimage.com/720x400"
+              :src="article.image"
               alt="blog"
             />
             <div class="p-6">
@@ -141,6 +141,7 @@
 </template>
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ $content, params }) {
     const articles = await $content("blog", params.slug).fetch();
     return { articles };

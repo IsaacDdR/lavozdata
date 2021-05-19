@@ -36,8 +36,9 @@
           </p>
         </div>
       </div>
-      <LazyStream class="mx-auto" />
+      <Stream class="mx-auto" />
     </div>
+    <h3 class="mb-8 md:mx-auto">Escucha en vivo</h3>
     <div
       v-for="person in persons"
       :key="person.name"

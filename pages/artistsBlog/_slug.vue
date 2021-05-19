@@ -128,6 +128,7 @@
 </template>
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ $content, params }) {
     const artist = await $content("artists", params.slug)
       .sortBy("createdAt", "asc")
