@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white md:bg-lg-pattern bg-cover bg-opacity-25 bg-no-repeat">
+  <div class="bg-white">
     <div
       class="bg-transparent fixed w-full z-20"
       :class="{ 'bg-blue-400': !view.topOfPage }"

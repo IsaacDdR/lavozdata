@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div>
+    <div class="pt-24">
+      <span class="ml-5 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/"> Inicio</NuxtLink>
+      </span>
       <h1
         class="
           sm:text-5xl
@@ -10,7 +14,7 @@
           mx-auto
           title-font
           text-gray-900
-          pt-24
+          pt-6
         "
       >
         Efemérides
@@ -34,13 +38,13 @@
         :to="{ name: 'artistsBlog-slug', params: { slug: artist.slug } }"
         v-for="artist of artists"
         :key="artist.slug"
-        class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mt-4"
+        class="w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4"
       >
         <div class="p-4">
           <div
             class="
               h-full
-              bg-gray-100 bg-opacity-75
+              bg-blue-100 bg-opacity-75
               px-8
               pt-16
               pb-24

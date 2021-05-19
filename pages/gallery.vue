@@ -1,6 +1,10 @@
 <template>
   <section class="text-gray-900 body-font">
     <div class="container px-5 py-24 mx-auto">
+      <span class="ml-2 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/">Inicio</NuxtLink>
+      </span>
       <div class="flex flex-col text-center w-full mb-12 mt-2">
         <h1
           class="

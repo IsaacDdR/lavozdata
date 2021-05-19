@@ -1,6 +1,10 @@
 <template>
   <article class="pt-20">
     <template>
+      <span class="ml-5 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/artists"> Efemérides</NuxtLink>
+      </span>
       <div class="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
         <div
           class="

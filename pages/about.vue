@@ -12,7 +12,11 @@
       lg:py-18
     "
   >
-    <div class="grid gap-10 lg:grid-row lg:w-1/2 mx-auto mt-12 md:mt-14">
+    <div class="grid gap-10 lg:grid-row lg:w-1/2 mx-auto mt-8 md:mt-14">
+      <span class="ml-2 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/"> Inicio</NuxtLink>
+      </span>
       <div class="lg:pr-10">
         <h5
           class="

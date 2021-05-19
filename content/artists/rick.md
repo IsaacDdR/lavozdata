@@ -4,7 +4,7 @@ realMonth: 5
 name: Rick Wakeman
 day: 18
 month: 4
-frase: La música tiene poder curativo. Tiene la capacidad de sacar a las personas de sí mismas durante unas horas.
+frase: Mi fe es muy privado para mí. Desempeña un papel importante en mi vida, pero no tratar de tirar mis creencias a los demás. Tengo un gran respeto por todas las religiones y creencias, pero tienen una gran preocupación de que la religión y la fe son actualmente muy distantes unos de otros.
 slug: rick
 resumen: Rick Wakeman, nacido Richard Christopher Wakeman, es un compositor e intérprete británico, famoso por ser integrante del grupo de rock progresivo Yes y por su prolífica carrera solista.
 portrait: https://res.cloudinary.com/duruqkfg4/image/upload/v1621386359/rickw_ozj43f.webp

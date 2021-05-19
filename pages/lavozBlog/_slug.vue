@@ -4,7 +4,7 @@
       class="
         relative
         px-4
-        pt-16
+        pt-24
         mx-auto
         lg:py-32
         md:px-8
@@ -13,9 +13,13 @@
         md:max-w-full
       "
     >
+      <span class="ml-2 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/blog"> Blog</NuxtLink>
+      </span>
       <div class="max-w-xl mx-auto lg:max-w-screen-xl">
-        <div class="mb-16 lg:max-w-lg lg:mb-0">
-          <div class="max-w-xl mb-6 mt-8">
+        <div class="mb-16 mt-12 lg:max-w-lg lg:mb-0">
+          <div class="max-w-xl mb-6 mt-4">
             <h2
               class="
                 max-w-lg

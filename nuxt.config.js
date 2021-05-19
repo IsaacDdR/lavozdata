@@ -55,6 +55,8 @@ export default {
     "nuxt-vite",
 
     "@nuxtjs/moment",
+
+    "@nuxtjs/fontawesome",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -67,6 +69,13 @@ export default {
 
     "@nuxtjs/google-fonts",
   ],
+
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 
   axios: {
     baseURL: "https://lavoz-app.herokuapp.com",

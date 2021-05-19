@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div>
+    <div class="pt-24">
+      <span class="ml-5 md:ml-16 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/"> Inicio</NuxtLink>
+      </span>
       <h1
         class="
           sm:text-5xl
@@ -10,7 +14,6 @@
           mx-auto
           title-font
           text-gray-900
-          pt-24
         "
       >
         Blog
