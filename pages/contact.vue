@@ -159,7 +159,7 @@
                   flex
                   mx-auto
                   text-white
-                  bg-indigo-500
+                  bg-blue-500
                   border-0
                   py-2
                   px-8
@@ -177,7 +177,7 @@
             >
               <a
                 href="mailto:hola@lavozuniversal.com?subject=Mensaje desde el sitio web."
-                class="text-blue-700 font-bold"
+                class="text-blue-500 font-bold"
                 >hola@lavozuniversal.com</a
               >
               <br />

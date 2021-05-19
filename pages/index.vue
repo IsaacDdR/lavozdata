@@ -19,7 +19,7 @@
         <h1
           class="
             md:my-4
-            text-blue-600 text-6xl
+            text-blue-500 text-6xl
             font-bold
             leading-tight
             text-center
@@ -31,15 +31,16 @@
           La Voz Universal
         </h1>
         <div class="flex">
-          <p class="mx-auto text-2xl italic">La voz favorita de mexico</p>
+          <p class="mx-auto text-2xl italic text-gray-900">
+            La voz favorita de mexico
+          </p>
         </div>
       </div>
-      <Stream class="mx-auto" />
+      <LazyStream class="mx-auto" />
     </div>
-
     <div
       v-for="person in persons"
-      :key="person.slug"
+      :key="person.name"
       class="sr-only lg:not-sr-only"
     >
       <section class="mx-auto text-gray-600 body-font">
@@ -242,7 +243,7 @@
               >
                 ADOLFO FERNÁNDEZ ZEPEDA
               </h2>
-              <p class="text-gray-800">Locutor La voz universal</p>
+              <p class="text-gray-800">Locutor "La Voz Universal"</p>
             </div>
           </div>
         </section>
@@ -252,8 +253,6 @@
 </template>
 <script>
 export default {
-  layout: "inicio",
-
   async asyncData({ $content, params }) {
     const current = new Date();
     const todayDay = current.getDate();
@@ -276,6 +275,7 @@ export default {
   },
 };
 </script>
+
 <style>
 .fade-enter-active,
 .fade-leave-active {

@@ -113,6 +113,9 @@
                 >Más efemérides</NuxtLink
               >
             </div>
+            <!--
+            <LazyPrevNext :prev="prev" :next="next" />
+            -->
           </div>
         </div>
       </div>
@@ -122,8 +125,17 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const artist = await $content("artists", params.slug).fetch();
-    return { artist };
+    const artist = await $content("artists", params.slug)
+      .sortBy("createdAt", "asc")
+      .fetch();
+
+    let [prev, next] = await $content("artists")
+      .only("name", "slug")
+      .sortBy("createdAt", "asc")
+      .surround(params.slug)
+      .fetch();
+
+    return { artist, prev, next };
   },
 };
 </script>

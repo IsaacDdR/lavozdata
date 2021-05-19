@@ -39,10 +39,18 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium font-semibold
+                  text-gray-900
+                  mb-3
+                "
+              >
                 Mariah Carey
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 Foto de Adolfo Fernández Zepeda con la cantante, compositora,
                 productora musical, actriz y filántropa estadounidense, Mariah
                 Carey.
@@ -70,10 +78,19 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium
+                  text-gray-900
+                  font-semibold
+                  mb-3
+                "
+              >
                 Abbey House
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 Conociendo Abbey House en Inglaterra. Mansión neo-isabelina,
                 diseñada por Sir Edwin Lutyens. Terminada en 1914 como una casa
                 de huéspedes para Vickers Ltd.
@@ -101,10 +118,19 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium
+                  text-gray-900
+                  font-semibold
+                  mb-3
+                "
+              >
                 José José.
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 En compañia de José Rómulo Sosa Ortiz, un cantante, músico,
                 productor musical y actor ocasional mexicano mejor conocido bajo
                 su nombre artístico, José José.
@@ -132,10 +158,19 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium
+                  text-gray-900
+                  font-semibold
+                  mb-3
+                "
+              >
                 Randolph Peter
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 Foto con "Pete Best", músico británico conocido por haber sido
                 el baterista de The Beatles.
               </p>
@@ -162,10 +197,19 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium
+                  text-gray-900
+                  font-semibold
+                  mb-3
+                "
+              >
                 Freddie Mercury
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 Fotografía de Adolfo con su hijo Adolfo Jr. y Freddie Mercury,
                 conocido por haber sido el vocalista principal de Queen.
               </p>
@@ -192,10 +236,19 @@
                 hover:opacity-100
               "
             >
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+              <h1
+                class="
+                  title-font
+                  text-lg
+                  font-medium
+                  text-gray-900
+                  font-semibold
+                  mb-3
+                "
+              >
                 Georgios Kyriacos Panayiotou
               </h1>
-              <p class="leading-relaxed">
+              <p class="leading-relaxed text-gray-800">
                 Adolfo con su esposa Érika y George Michael, después de una
                 presentación para medios del mundo en Londres.
               </p>

@@ -51,18 +51,6 @@
               alt="blog"
             />
             <div class="p-6">
-              <h2
-                class="
-                  tracking-widest
-                  text-xs
-                  title-font
-                  font-medium
-                  text-gray-400
-                  mb-1
-                "
-              >
-                CATEGORY
-              </h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
                 {{ article.name }}
               </h1>
@@ -71,14 +59,8 @@
               </p>
               <div class="flex items-center flex-wrap">
                 <a
-                  class="
-                    text-indigo-500
-                    inline-flex
-                    items-center
-                    md:mb-2
-                    lg:mb-0
-                  "
-                  >Learn More
+                  class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0"
+                  >Leer más
                   <svg
                     class="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
