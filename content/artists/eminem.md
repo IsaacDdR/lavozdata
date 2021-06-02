@@ -1,8 +1,8 @@
 ---
 year: 1972
 name: Eminem
-day: 17
-month: 7
+day: 1
+month: 5
 realMonth: 10
 frase: La música es como una cápsula de tiempo. Cada parte revela una etapa de mi vida que fue o una etapa de mi vida.
 slug: eminem

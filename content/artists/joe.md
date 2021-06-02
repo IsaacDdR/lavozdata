@@ -2,7 +2,7 @@
 year: 1944
 realMonth: 5
 name: Joe Cocker
-day: 20
+day: 21
 month: 4
 frase: Es todo cuestión de escuchar lo que me gusta y ver si puedo hacer que encaje con mi estilo.
 slug: joe

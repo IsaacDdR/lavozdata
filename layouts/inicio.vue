@@ -19,7 +19,7 @@
         >
           <div class="relative flex items-center justify-between">
             <NuxtLink
-              to="/"
+              to="/index"
               aria-label="Company"
               title="Company"
               class="inline-flex items-center"

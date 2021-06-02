@@ -10,7 +10,7 @@
         lg:max-w-screen-xl
         md:px-24
         lg:px-8
-        lg:py-18
+        lg:py-48
       "
     >
       <div class="mt-4 md:mt-8">
@@ -28,7 +28,7 @@
                 text-5xl
                 font-extrabold
                 leading-none
-                text-gray-900
+                text-blue-900
               "
             >
               Más de nosotros

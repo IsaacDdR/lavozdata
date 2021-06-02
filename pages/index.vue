@@ -1,17 +1,27 @@
 <template>
-  <div class="flex flex-wrap lg:flex-row flex-col md:flex-row items-center">
+  <div
+    class="
+      flex flex-wrap
+      lg:flex-row
+      flex-col
+      md:flex-row
+      items-center
+      lg:w-3/4
+      mx-auto
+      bg-white
+    "
+  >
     <div
       class="w-screen leading-normal tracking-normal text-gray-900 font-sans"
     >
       <div
         class="
-          mt-24
+          mt-56
           mb-8
           mx-auto
           flex-col
           lg:mx-auto
           w-full
-          xl:w-2/5
           justify-center
           lg:items-start
         "
@@ -19,11 +29,10 @@
         <h1
           class="
             md:my-4
-            text-blue-500 text-6xl
+            text-blue-900 text-6xl
             font-bold
             leading-tight
             text-center
-            slide-in-bottom-h1
             font-serif
             mt-5
           "
@@ -36,9 +45,7 @@
           </p>
         </div>
       </div>
-      <Stream class="mx-auto" />
     </div>
-    <h3 class="mb-8 md:mx-auto">Escucha en vivo</h3>
     <div
       v-for="person in persons"
       :key="person.name"
@@ -171,7 +178,7 @@
                     params: { slug: person.slug },
                   }"
                   class="
-                    text-blue-500 text-xl
+                    text-blue-900 text-xl
                     inline-flex
                     items-center
                     md:mb-2

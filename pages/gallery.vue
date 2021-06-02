@@ -1,7 +1,9 @@
 <template>
   <section class="text-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <span class="ml-2 md:ml-16 text-xl active:shadow-inner noSelect">
+    <div class="container px-5 py-56 mx-auto">
+      <span
+        class="ml-2 md:ml-16 text-xl text-white active:shadow-inner noSelect"
+      >
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
         <NuxtLink class="text-bold" to="/">Inicio</NuxtLink>
       </span>
@@ -13,7 +15,7 @@
             font-extrabold
             title-font
             mb-4
-            text-gray-900
+            text-blue-900
           "
         >
           Galería
