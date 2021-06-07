@@ -2,10 +2,10 @@
   <section class="text-gray-900 body-font">
     <div class="container px-5 py-56 mx-auto">
       <span
-        class="ml-2 md:ml-16 text-xl text-white active:shadow-inner noSelect"
+        class="ml-2 md:ml-16 text-xl text-blue-900 active:shadow-inner noSelect"
       >
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
-        <NuxtLink class="text-bold" to="/">Inicio</NuxtLink>
+        <NuxtLink class="text-bold text-blue-900" to="/">Inicio</NuxtLink>
       </span>
       <div class="flex flex-col text-center w-full mb-12 mt-2">
         <h1
@@ -27,8 +27,9 @@
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img
+            <nuxt-img
               alt="gallery"
+              format="webp"
               class="absolute inset-0 w-full h-full object-cover object-center"
               src="https://res.cloudinary.com/duruqkfg4/image/upload/v1621186563/4_tdradn.jpg"
             />

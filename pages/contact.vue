@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font relative md:w-9/12 mx-auto">
-    <div class="flex flex-col px-5 py-56 mx-auto">
-      <span class="mb-6 text-gray-400 text-xl active:shadow-inner noSelect">
+    <div class="flex flex-col px-5 pt-56 mx-auto">
+      <span class="mb-6 text-gray-900 text-xl active:shadow-inner noSelect">
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
         <NuxtLink class="text-bold" to="/"> Inicio</NuxtLink>
       </span>

@@ -3,7 +3,7 @@
     <div
       class="
         px-4
-        pt-16
+        pt-48
         mx-auto
         sm:max-w-xl
         md:max-w-full

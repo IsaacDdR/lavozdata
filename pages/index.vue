@@ -8,7 +8,6 @@
       items-center
       lg:w-3/4
       mx-auto
-      bg-white
     "
   >
     <div
@@ -261,6 +260,7 @@
 </template>
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ $content, params }) {
     const current = new Date();
     const todayDay = current.getDate();

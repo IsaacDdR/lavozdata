@@ -57,6 +57,8 @@ export default {
     "@nuxtjs/moment",
 
     "@nuxtjs/fontawesome",
+
+    "@nuxt/image",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -69,12 +71,6 @@ export default {
 
     "@nuxtjs/google-fonts",
   ],
-
-  router: {
-    scrollBehavior: function (to, from, savedPosition) {
-      return { x: 0, y: 0 };
-    },
-  },
 
   fontawesome: {
     icons: {

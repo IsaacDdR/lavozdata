@@ -6,7 +6,7 @@
     <audio
       controls
       class="mx-auto w-3/4"
-      src="https://streams.radiomast.io/668aa56b-5094-4326-a395-db9dfad740e1"
+      src="http://stream.radiojar.com/bfews6ef3p8uv"
     ></audio>
   </div>
 </template>
