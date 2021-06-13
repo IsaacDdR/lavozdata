@@ -34,7 +34,7 @@
           class="text-gray-900 ml-1"
           rel="noopener noreferrer"
           target="_blank"
-          >Sitio bien hecho por cintatic.com</a
+          >Sitio hecho por cintatic.com</a
         >
       </p>
       <span

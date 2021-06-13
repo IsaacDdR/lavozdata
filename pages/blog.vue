@@ -22,7 +22,7 @@
         class="
           lg:w-2/3
           mx-auto
-          text-center
+          text-center text-gray-900
           leading-relaxed
           text-base
           font-bold

@@ -4,9 +4,9 @@
       class="
         relative
         px-4
-        pt-24
+        pt-56
         mx-auto
-        lg:py-32
+        md:pt-64
         md:px-8
         xl:px-20
         sm:max-w-xl

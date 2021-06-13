@@ -1,5 +1,5 @@
 <template>
-  <article class="pt-20">
+  <article class="pt-64">
     <template>
       <span class="ml-5 md:ml-16 text-xl active:shadow-inner noSelect">
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
