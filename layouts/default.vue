@@ -1,8 +1,11 @@
 <template>
-  <div class="text-blue-900 bg-sm-pattern bg-cover">
+  <nav class="text-blue-900 bg-sm-pattern bg-cover">
     <div
       class="bg-transparent fixed w-full z-20"
-      :class="{ 'bg-blue-900 text-white text-bold': !view.topOfPage }"
+      :class="{
+        'shadow bg-blue-900 text-white text-bold border-b-4 border-red-600':
+          !view.topOfPage,
+      }"
     >
       <div class="flex mt-6 text-center w-screen px-6">
         <NuxtLink
@@ -11,7 +14,12 @@
           title="Company"
           class="text-xl font-bold tracking-widest mx-auto"
         >
-          <span>La Voz Universal</span>
+          <img
+            v-if="!view.topOfPage"
+            class="w-48"
+            src="~/static/logo-la-voz-white.png"
+          />
+          <img v-else class="w-48" src="~/static/logo-la-voz.png" />
         </NuxtLink>
         <div class="lg:hidden">
           <button
@@ -337,7 +345,7 @@
       <Nuxt />
     </transition>
     <Footer />
-  </div>
+  </nav>
 </template>
 <script>
 export default {
