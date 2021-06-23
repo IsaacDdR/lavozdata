@@ -1,7 +1,7 @@
 ---
 year: 1972
 name: Eminem
-day: 16
+day: 23
 month: 5
 realMonth: 10
 frase: La música es como una cápsula de tiempo. Cada parte revela una etapa de mi vida que fue o una etapa de mi vida.
@@ -14,12 +14,10 @@ imageCircle: https://res.cloudinary.com/duruqkfg4/image/upload/w_1000,c_fill,ar_
 <p>Fue criado por su madre en un barrio de negros en Detroit, donde recibió influencias del hip hop desde muy joven.
 <br />
 <br />
-Sus primeras rimas las escribió con catorce años, edad en la que pasó a formar parte del dúo Soul Intent.
+Sus primeras rimas las escribió con catorce años.
 <br />
 <br />
-Fue descubierto en la radio por el productor de Detroit, FBT (Funky Bass Team).
-<br />
-<br />
+
 <!--more-->
 
 Durante 1996, apareció su primer álbum, Infinite, con el Label Web Entertainment, que solo lo produjo para Detroit. Después mandó una maqueta al concurso Rap Olympics 1997 en Los Ángeles donde ganó la segunda plaza.

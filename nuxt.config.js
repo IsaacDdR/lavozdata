@@ -19,6 +19,19 @@ export default {
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        src: "/three.min.js",
+      },
+      { src: "/p5.min.js" },
+
+      {
+        src: "/globe.min.js",
+      },
+      {
+        src: "topology.min.js",
+      },
+    ],
   },
 
   googleAnalytics: {

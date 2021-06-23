@@ -1,12 +1,20 @@
 <template>
-  <nav class="text-blue-900 bg-sm-pattern bg-cover">
+  <nav class="text-blue-900">
     <div
       class="bg-transparent fixed w-full z-20"
       :class="{
-        'shadow bg-blue-900 text-white text-bold border-b-4 border-red-600':
+        'shadow bg-gradient-to-r from-blue-usa to-blue-usa-dark text-white text-bold border-b-4 border-red-600':
           !view.topOfPage,
       }"
     >
+      <div class="views">
+        <span class="views">
+          <img
+            src="https://visitor-badge.glitch.me/badge?page_id='lavozuniversal.com'"
+            alt="Views"
+          />
+        </span>
+      </div>
       <div class="flex mt-6 text-center w-screen px-6">
         <NuxtLink
           to="/"
@@ -26,6 +34,7 @@
             aria-label="Open Menu"
             title="Open Menu"
             class="
+              mt-6
               transition
               duration-200
               rounded
@@ -63,16 +72,7 @@
                       title="Company"
                       class="inline-flex items-center"
                     >
-                      <span
-                        class="
-                          text-xl
-                          font-bold
-                          tracking-wide
-                          text-gray-800
-                          uppercase
-                        "
-                        >La Voz Universal</span
-                      >
+                      <img class="w-32 ml-24" src="~/static/logo-la-voz.png" />
                     </NuxtLink>
                   </div>
                   <div>
@@ -350,6 +350,7 @@
 <script>
 export default {
   scrollToTop: true,
+
   data() {
     return {
       isMenuOpen: false,
@@ -358,6 +359,7 @@ export default {
       },
     };
   },
+
   watch: {
     $route() {
       this.isMenuOpen = false;

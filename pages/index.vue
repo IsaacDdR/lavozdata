@@ -1,5 +1,6 @@
 <template>
   <div
+    id="vanta-selector"
     class="
       flex flex-wrap
       lg:flex-row
@@ -11,44 +12,6 @@
       md:pt-64
     "
   >
-    <!--
-    <div
-      class="w-screen leading-normal tracking-normal text-gray-900 font-sans"
-    >
-      <div
-        class="
-          mt-56
-          md:mt-64
-          mb-8
-          mx-auto
-          flex-col
-          lg:mx-auto
-          w-full
-          justify-center
-          lg:items-start
-        "
-      >
-        <h1
-          class="
-            md:my-4
-            text-blue-900 text-6xl
-            font-bold
-            leading-tight
-            text-center
-            font-serif
-            mt-5
-          "
-        >
-          La Voz Universal
-        </h1>
-        <div class="flex">
-          <p class="mx-auto text-2xl italic text-gray-900">
-            La voz favorita de mexico
-          </p>
-        </div>
-      </div>
-    </div>
-    -->
     <div
       v-for="person in persons"
       :key="person.name"
@@ -143,90 +106,6 @@
       </section>
     </div>
 
-    <!--
- 
-    <div
-      v-for="person in persons"
-      :key="person.name"
-      class="sr-only lg:not-sr-only"
-    >
-      <section class="mx-auto text-gray-600 body-font">
-        <div class="flex pt-12 px-5 mx-auto flex flex-col">
-          <div class="shadow-lg bg-white rounded-lg lg:w-3/4 mx-auto">
-            <p class="text-bold text-2xl ml-4 p-4 text-black">
-              Un día como hoy {{ person.year }}
-            </p>
-            <div class="h-72 shadow overflow-hidden">
-              <img
-                alt="content"
-                class="shadow object-cover object-center h-full w-full"
-                :src="person.portrait"
-              />
-            </div>
-            <div class="flex flex-col sm:flex-row mt-10 p-6">
-              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <img
-                  class="w-1/2 mx-auto rounded-full"
-                  :src="person.imageCircle"
-                />
-                <div
-                  class="flex flex-col items-center text-center justify-center"
-                >
-                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
-                    {{ person.name }}
-                  </h2>
-                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                  <p class="text-base">
-                    {{ person.resumen }}
-                  </p>
-                </div>
-              </div>
-              <div
-                class="
-                  sm:w-2/3
-                  sm:pl-8
-                  sm:py-8
-                  sm:border-l
-                  border-gray-200
-                  sm:border-t-0
-                  border-t
-                  mt-4
-                  pt-4
-                  sm:mt-0
-                  text-center
-                  sm:text-left
-                "
-              >
-                <article class="leading-relaxed text-lg mb-4">
-                  {{ person.description }}
-                </article>
-                <NuxtLink
-                  :to="{
-                    name: 'artistsBlog-slug',
-                    params: { slug: person.slug },
-                  }"
-                  class="text-indigo-500 inline-flex items-center"
-                  >Leer más
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </NuxtLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    -->
-
     <!--::::::::::::::::::::Efemerides::::::::::::::::::::::::-->
     <div class="lg:sr-only w-full" v-for="person of persons" :key="person.slug">
       <div class="flex flex-wrap">
@@ -305,7 +184,7 @@
       </div>
     </div>
     <!--Da formato en el inicio a la imagen de Adolfo-->
-    <div class="mx-auto flex flex-col w-1/2 pt-20 font-serif">
+    <div class="mx-auto flex flex-col w-1/4 pt-20 font-serif">
       <div class="text-center text-white mx-auto">
         <img
           class="mx-auto rounded-full shadow-xl border-blue-900 border-4"
@@ -352,6 +231,21 @@
 <script>
 export default {
   scrollToTop: true,
+  mounted() {
+    VANTA.GLOBE({
+      el: "#vanta-selector",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: true,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x1c47e8,
+      color2: 0xff0000,
+      backgroundColor: 0xffffff,
+    });
+  },
   async asyncData({ $content, params }) {
     const current = new Date();
     const todayDay = current.getDate();
