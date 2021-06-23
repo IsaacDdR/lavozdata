@@ -10,7 +10,7 @@
       <div class="views">
         <span class="views">
           <img
-            src="https://visitor-badge.glitch.me/badge?page_id='lavozuniversal.com'"
+            src="https://visitor-badge.glitch.me/badge?page_id='lavozuniversal.com"
             alt="Views"
           />
         </span>
