@@ -3,7 +3,7 @@
     <div
       class="bg-transparent fixed w-full z-20"
       :class="{
-        'shadow bg-gradient-to-r from-blue-usa to-blue-usa-dark text-white text-bold border-b-4 border-red-600':
+        'shadow  bg-blue-usa text-white text-bold border-b-4 border-red-usa':
           !view.topOfPage,
       }"
     >
@@ -25,9 +25,9 @@
           <img
             v-if="!view.topOfPage"
             class="w-48"
-            src="~/static/logo-la-voz-white.png"
+            src="~/static/lavoz-logo-white.png"
           />
-          <img v-else class="w-48" src="~/static/logo-la-voz.png" />
+          <img v-else class="w-48" src="~/static/lavoz-logo.png" />
         </NuxtLink>
         <div class="lg:hidden">
           <button

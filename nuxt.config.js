@@ -80,6 +80,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    "@nuxtjs/strapi",
+
     "@nuxtjs/axios",
 
     "@nuxt/content",

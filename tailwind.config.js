@@ -2,8 +2,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "blue-usa": "#0e10f1",
-        "blue-usa-dark": "#0813e5",
+        "blue-usa": "#021ed4",
+        "red-usa": "#d9090c",
       },
       animation: {
         blob: "blob 7s infinite",
