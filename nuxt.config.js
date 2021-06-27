@@ -72,6 +72,8 @@ export default {
     "@nuxtjs/fontawesome",
 
     "@nuxt/image",
+
+    "@nuxtjs/composition-api/module",
   ],
 
   tailwindcss: {
@@ -80,6 +82,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    //"@nuxjs/apollo",
+
     "@nuxtjs/strapi",
 
     "@nuxtjs/axios",
@@ -90,6 +94,14 @@ export default {
 
     "@nuxtjs/google-fonts",
   ],
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: "http://localhost:1337/graphql",
+      },
+    },
+  },
 
   fontawesome: {
     icons: {

@@ -34,9 +34,9 @@
     </div>
     <div class="flex flex-wrap mt-5">
       <NuxtLink
-        :to="{ name: 'lavozBlog-slug', params: { slug: article.slug } }"
-        v-for="article of articles"
-        :key="article.slug"
+        v-for="article in articles"
+        :key="article.id"
+        :to="`/lavozBlog/${article.id}`"
         class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4"
       >
         <div class="p-4">
@@ -50,7 +50,7 @@
           >
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
-              :src="article.image"
+              :src="`http://localhost:1337${article.imagen.url}`"
               alt="blog"
             />
             <div class="p-6">
@@ -58,7 +58,7 @@
                 {{ article.titulo }}
               </h1>
               <p class="leading-relaxed mb-3">
-                {{ article.description }}
+                {{ article.descripcion }}
               </p>
               <div class="flex items-center flex-wrap">
                 <a
@@ -86,6 +86,18 @@
   </div>
 </template>
 <script>
+import { useFetch, ref } from "@nuxtjs/composition-api";
+export default {
+  setup() {
+    const articles = ref();
+    useFetch(async ({ $strapi }) => {
+      articles.value = await $strapi.find("articulos");
+    });
+    return { articles };
+  },
+};
+
+/*
 export default {
   scrollToTop: true,
   async asyncData({ $content, params }) {
@@ -93,4 +105,5 @@ export default {
     return { articles };
   },
 };
+*/
 </script>

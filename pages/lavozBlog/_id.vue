@@ -1,23 +1,23 @@
 <template>
   <div class="pt-12">
-    <article>
-      <div
-        class="
-          relative
-          px-4
-          pt-56
-          mx-auto
-          md:pt-64
-          md:px-8
-          xl:px-20
-          sm:max-w-xl
-          md:max-w-full
-        "
-      >
-        <span class="ml-2 md:ml-2 text-xl active:shadow-inner noSelect">
-          <font-awesome-icon :icon="['fas', 'arrow-left']" />
-          <NuxtLink class="text-bold" to="/blog"> Blog</NuxtLink>
-        </span>
+    <div
+      class="
+        relative
+        px-4
+        pt-56
+        mx-auto
+        md:pt-64
+        md:px-8
+        xl:px-20
+        sm:max-w-xl
+        md:max-w-full
+      "
+    >
+      <span class="ml-2 md:ml-2 text-xl active:shadow-inner noSelect">
+        <font-awesome-icon :icon="['fas', 'arrow-left']" />
+        <NuxtLink class="text-bold" to="/blog"> Blog</NuxtLink>
+      </span>
+      <article>
         <div class="max-w-xl mx-auto lg:max-w-screen-xl">
           <div class="mb-16 mt-12 lg:max-w-lg lg:mb-0">
             <div class="max-w-xl mb-6 mt-4">
@@ -34,10 +34,10 @@
                   sm:leading-none
                 "
               >
-                {{ artist.name }}
+                {{ article.titulo }}
               </h2>
               <p class="text-base text-gray-900 md:text-lg">
-                {{ artist.description }}
+                {{ article.descripcion }}
               </p>
             </div>
             <div class="flex items-center">
@@ -99,7 +99,6 @@
           "
         >
           <img
-            :src="artist.image"
             class="
               object-cover object-top
               w-full
@@ -118,16 +117,49 @@
             alt=""
           />
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
 </template>
 <script>
+import {
+  defineComponent,
+  useContext,
+  ref,
+  useFetch,
+  useRoute,
+} from "@nuxtjs/composition-api";
+export default defineComponent({
+  setup() {
+    const article = ref({});
+    const route = useRoute();
+    const { $strapi } = useContext();
+
+    useFetch(async () => {
+      article.value = await $strapi.findOne("articulos", route.value.params.id);
+    });
+
+    return { article };
+  },
+});
+
+/*
 export default {
-  scrollToTop: true,
-  async asyncData({ $content, params }) {
-    const artist = await $content("blog", params.slug).fetch();
-    return { artist };
+  async asyncData({ $strapi, params }) {
+    const matchingArticles = await $strapi.find("articulos", {
+      slug: params.slug,
+    });
+    return {
+      article: matchingArticles[0],
+    };
   },
 };
+      export default {
+        scrollToTop: true,
+        async asyncData({ $content, params }) {
+          const artist = await $content("blog", params.slug).fetch();
+          return { artist };
+        },
+      };
+      */
 </script>
