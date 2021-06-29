@@ -6,8 +6,7 @@
         px-4
         pt-56
         mx-auto
-        md:pt-64
-        md:px-8
+        md:pt-64 md:px-8
         xl:px-20
         sm:max-w-xl
         md:max-w-full
@@ -17,6 +16,7 @@
         <font-awesome-icon :icon="['fas', 'arrow-left']" />
         <NuxtLink class="text-bold" to="/blog"> Blog</NuxtLink>
       </span>
+
       <article>
         <div class="max-w-xl mx-auto lg:max-w-screen-xl">
           <div class="mb-16 mt-12 lg:max-w-lg lg:mb-0">
@@ -30,14 +30,13 @@
                   font-bold
                   tracking-tight
                   text-gray-900
-                  sm:text-4xl
-                  sm:leading-none
+                  sm:text-4xl sm:leading-none
                 "
               >
-                {{ article.titulo }}
+                {{ article.name }}
               </h2>
               <p class="text-base text-gray-900 md:text-lg">
-                {{ article.descripcion }}
+                {{ article.description }}
               </p>
             </div>
             <div class="flex items-center">
@@ -60,8 +59,7 @@
                   bg-blue-500
                   text-white
                   hover:bg-blue-700
-                  focus:shadow-outline
-                  focus:outline-none
+                  focus:shadow-outline focus:outline-none
                 "
               >
                 Inicio
@@ -91,11 +89,7 @@
             overflow-hidden
             lg:w-2/3
             xl:w-1/2
-            lg:absolute
-            lg:justify-start
-            lg:bottom-0
-            lg:right-0
-            lg:items-end
+            lg:absolute lg:justify-start lg:bottom-0 lg:right-0 lg:items-end
           "
         >
           <img
@@ -111,9 +105,9 @@
               xl:ml-8
               lg:-mb-24
               xl:-mb-28
-              lg:h-auto
-              lg:max-w-screen-md
+              lg:h-auto lg:max-w-screen-md
             "
+            :src="article.image"
             alt=""
           />
         </div>
@@ -122,31 +116,17 @@
   </div>
 </template>
 <script>
-import {
-  defineComponent,
-  useContext,
-  ref,
-  useFetch,
-  useRoute,
-} from "@nuxtjs/composition-api";
-export default defineComponent({
-  setup() {
-    const article = ref({});
-    const route = useRoute();
-    const { $strapi } = useContext();
-
-    useFetch(async () => {
-      article.value = await $strapi.findOne("articulos", route.value.params.id);
-    });
-
+export default {
+  scrollToTop: true,
+  async asyncData({ $content, params }) {
+    const article = await $content("blog", params.slug).fetch();
     return { article };
   },
-});
-
+};
 /*
 export default {
   async asyncData({ $strapi, params }) {
-    const matchingArticles = await $strapi.find("articulos", {
+    const matchingArticles = await $strapi.findOne("articulos", {
       slug: params.slug,
     });
     return {
@@ -154,12 +134,28 @@ export default {
     };
   },
 };
-      export default {
-        scrollToTop: true,
-        async asyncData({ $content, params }) {
-          const artist = await $content("blog", params.slug).fetch();
-          return { artist };
-        },
-      };
+import {
+  defineComponent,
+  useContext,
+  ref,
+  useFetch,
+  useRoute,
+} from "@nuxtjs/composition-api";
+
+export default defineComponent({
+  setup() {
+    const article = ref({});
+    const route = useRoute();
+    const { $strapi } = useContext();
+    const image = article.value.image;
+
+    useFetch(async () => {
+      article.value = await $strapi.findOne("articulos", route.value.params.id);
+    });
+
+    return { article, image };
+  },
+});
+
       */
 </script>

@@ -36,7 +36,7 @@
       <NuxtLink
         v-for="article in articles"
         :key="article.id"
-        :to="`/lavozBlog/${article.id}`"
+        :to="`/lavozBlog/${article.slug}`"
         class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4"
       >
         <div class="p-4">
@@ -50,15 +50,15 @@
           >
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
-              :src="`http://localhost:1337${article.imagen.url}`"
+              :src="article.image"
               alt="blog"
             />
             <div class="p-6">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                {{ article.titulo }}
+                {{ article.name }}
               </h1>
               <p class="leading-relaxed mb-3">
-                {{ article.descripcion }}
+                {{ article.description }}
               </p>
               <div class="flex items-center flex-wrap">
                 <a
@@ -86,6 +86,7 @@
   </div>
 </template>
 <script>
+/*
 import { useFetch, ref } from "@nuxtjs/composition-api";
 export default {
   setup() {
@@ -96,8 +97,8 @@ export default {
     return { articles };
   },
 };
+  */
 
-/*
 export default {
   scrollToTop: true,
   async asyncData({ $content, params }) {
@@ -105,5 +106,4 @@ export default {
     return { articles };
   },
 };
-*/
 </script>

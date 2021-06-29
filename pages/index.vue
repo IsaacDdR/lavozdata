@@ -12,85 +12,82 @@
       md:pt-64
     "
   >
-    <div
-      v-for="person in persons"
-      :key="person.name"
-      class="mx-auto bg-white bg-opacity-75 sr-only lg:not-sr-only"
-    >
-      <section class="text-gray-600 body-font mx-auto">
-        <div
-          class="
-            container
-            mx-auto
-            flex
-            px-5
-            py-24
-            md:flex-row
-            flex-col
-            items-center
-          "
-        >
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
-              class="object-cover object-center rounded"
-              alt="hero"
-              :src="person.portrait"
-            />
-          </div>
+    <!--::::::::::::::::::::Efemeride en pantallas grandes::::::::::::::::::::-->
+    <div class="bg-white bg-opacity-50 shadow-lg flex mx-auto mt-12">
+      <div
+        v-for="person in persons"
+        :key="person.name"
+        class="shadow-lg sm:rounded-3xl sr-only lg:not-sr-only"
+      >
+        <section class="text-gray-600 body-font">
           <div
             class="
-              lg:flex-grow
-              md:w-1/2
-              lg:pl-24
-              md:pl-16
-              flex flex-col
-              md:items-start
-              md:text-left
+              container
+              mx-auto
+              flex
+              mt-8
+              md:flex-row
+              flex-col
               items-center
-              text-center
             "
           >
-            <h1
-              class="
-                title-font
-                sm:text-4xl
-                text-3xl
-                mb-4
-                font-medium
-                text-gray-900
-              "
-            >
-              {{ person.name }}, {{ person.year }}
-            </h1>
-            <p class="mb-8 leading-relaxed">
-              {{ person.description }}
-            </p>
-            <div class="flex justify-center">
-              <NuxtLink
-                to="/artists"
+            <div class="w-1/2 mb-10 md:mb-0">
+              <img
+                class="object-cover object-center rounded w-3/4 mx-auto shadow"
+                alt="hero"
+                :src="person.imageCircle"
+              />
+            </div>
+            <div class="lg:flex-grow md:w-1/2 flex flex-col mr-24 ml-12">
+              <p class="text-bold text-1xl mb-4 text-left text-gray-800">
+                UN DÍA COMO HOY, EN
+                {{ person.year }}
+              </p>
+              <h1
                 class="
-                  ml-4
-                  inline-flex
-                  text-gray-700
-                  bg-gray-100
-                  border-0
-                  py-2
-                  px-6
-                  focus:outline-none
-                  hover:bg-gray-200
-                  rounded
-                  text-lg
+                  title-font
+                  sm:text-4xl
+                  text-3xl
+                  mb-4
+                  font-medium
+                  text-gray-900
                 "
               >
-                Leer más
-              </NuxtLink>
+                {{ person.name }}
+                <br class="hidden lg:inline-block" />
+              </h1>
+              <p class="mb-4 leading-relaxed text-justify">
+                {{ person.description }}
+              </p>
+              <div class="flex items-center flex-wrap">
+                <NuxtLink
+                  :to="{
+                    name: 'artistsBlog-slug',
+                    params: { slug: person.slug },
+                  }"
+                  class="text-blue-900 text-xl inline-flex items-center md:mb-2"
+                  >Leer más
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </NuxtLink>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
-    <!--::::::::::::::::::::Efemerides::::::::::::::::::::::::-->
+    <!--::::::::::::::::::::Efemeride en celular::::::::::::::::::::::::-->
     <div class="lg:sr-only w-full" v-for="person of persons" :key="person.slug">
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/2 mx-auto">
@@ -109,7 +106,7 @@
               {{ person.year }}
             </p>
             <img
-              class="shadow lg:h-48 md:h-36 w-full object-cover object-center"
+              class="shadow h-48 w-full object-cover object-center"
               :src="person.portrait"
               alt="blog"
             />
@@ -167,7 +164,72 @@
         </div>
       </div>
     </div>
-    <!--Da formato en el inicio a la imagen de Adolfo-->
+    <section class="text-gray-600 body-font mx-auto w-full">
+      <div
+        class="
+          container
+          mx-auto
+          flex
+          px-5
+          py-24
+          md:flex-row
+          flex-col
+          items-center
+        "
+      >
+        <div
+          class="
+            mx-auto
+            w-1/4
+            flex flex-col
+            md:items-start
+            mb-16
+            md:mb-0
+            items-center
+            text-center
+          "
+        >
+          <h1
+            class="
+              title-font
+              sm:text-4xl
+              text-3xl
+              mb-4
+              font-medium
+              text-gray-900
+            "
+          >
+            Adolfo Fernández Zepeda
+          </h1>
+          <p class="mb-4 leading-relaxed text-gray-800">
+            "Todo pasa, todo cambia pero el rock sigue en la voz universal"
+          </p>
+          <div class="flex justify-center mx-auto">
+            <NuxtLink
+              to="/about"
+              class="
+                inline-flex
+                text-gray-700
+                py-2
+                focus:outline-none
+                rounded
+                text-lg
+              "
+            >
+              Conoce más
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="object-cover object-center rounded-full"
+            alt="hero"
+            src="~/assets/adolfo.png"
+          />
+        </div>
+      </div>
+    </section>
+    <!--Da formato en el inicio a la imagen de Adolfo
     <div class="mx-auto flex flex-col w-1/2 pt-20 font-serif">
       <div class="text-center text-white mx-auto">
         <img
@@ -211,7 +273,7 @@
           </div>
         </section>
       </div>
-    </div>
+      -->
   </div>
 </template>
 <script>
