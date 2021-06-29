@@ -180,7 +180,8 @@
         <div
           class="
             mx-auto
-            w-1/4
+            md:w-1/4
+            w-full
             flex flex-col
             md:items-start
             mb-16
