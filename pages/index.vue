@@ -184,7 +184,7 @@
             w-full
             flex flex-col
             md:items-start
-            mb-16
+            mb-8
             md:mb-0
             items-center
             text-center
