@@ -1,163 +1,175 @@
 <template>
-  <div
-    id="vanta-selector"
-    class="
-      flex flex-wrap
-      lg:flex-row
-      flex-col
-      md:flex-row
-      items-center
-      mx-auto
-      pt-56
-      md:pt-64
-    "
-  >
-    <!--::::::::::::::::::::Efemeride en pantallas grandes::::::::::::::::::::-->
-    <div class="bg-white bg-opacity-50 shadow-lg flex mx-auto mt-12">
+  <div>
+    <div
+      id="vanta-selector"
+      class="
+        flex flex-wrap
+        lg:flex-row
+        flex-col
+        md:flex-row
+        items-center
+        mx-auto
+        pt-56
+        md:pt-64
+      "
+    >
       <div
-        v-for="person in persons"
-        :key="person.name"
-        class="shadow-lg sm:rounded-3xl sr-only lg:not-sr-only"
+        class="bg-white bg-opacity-50 shadow-lg flex mx-auto mt-12"
+        v-for="artist in article"
+        :key="artist.id"
       >
-        <section class="text-gray-600 body-font">
-          <div
-            class="
-              container
-              mx-auto
-              flex
-              mt-8
-              md:flex-row
-              flex-col
-              items-center
-            "
-          >
-            <div class="w-1/2 mb-10 md:mb-0">
-              <img
-                class="object-cover object-center rounded w-3/4 mx-auto shadow"
-                alt="hero"
-                :src="person.imageCircle"
-              />
-            </div>
-            <div class="lg:flex-grow md:w-1/2 flex flex-col mr-24 ml-12">
-              <p class="text-bold text-1xl mb-4 text-left text-gray-800">
-                UN DÍA COMO HOY, EN
-                {{ person.year }}
-              </p>
-              <h1
-                class="
-                  title-font
-                  sm:text-4xl
-                  text-3xl
-                  mb-4
-                  font-medium
-                  text-gray-900
-                "
-              >
-                {{ person.name }}
-                <br class="hidden lg:inline-block" />
-              </h1>
-              <p class="mb-4 leading-relaxed text-justify">
-                {{ person.description }}
-              </p>
-              <div class="flex items-center flex-wrap">
-                <NuxtLink
-                  :to="{
-                    name: 'artistsBlog-slug',
-                    params: { slug: person.slug },
-                  }"
-                  class="text-blue-900 text-xl inline-flex items-center md:mb-2"
-                  >Leer más
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </NuxtLink>
+        <div class="shadow-lg sm:rounded-3xl sr-only lg:not-sr-only">
+          <section class="text-gray-600 body-font">
+            <div
+              class="
+                container
+                mx-auto
+                flex
+                mt-8
+                md:flex-row
+                flex-col
+                items-center
+              "
+            >
+              <div class="w-1/2 mb-10 md:mb-0">
+                <img
+                  class="
+                    object-cover object-center
+                    rounded
+                    w-3/4
+                    mx-auto
+                    shadow
+                    rounded-full
+                  "
+                  alt="hero"
+                  :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+                />
+              </div>
+              <div class="lg:flex-grow md:w-1/2 flex flex-col mr-24 ml-12">
+                <p class="text-bold text-1xl mb-4 text-left text-gray-800">
+                  UN DÍA COMO HOY, EN
+                  {{ artist.year }}
+                </p>
+                <h1
+                  class="
+                    title-font
+                    sm:text-4xl
+                    text-3xl
+                    mb-4
+                    font-medium
+                    text-gray-900
+                  "
+                >
+                  {{ artist.nombre }}
+                  <br class="hidden lg:inline-block" />
+                </h1>
+                <p class="mb-4 leading-relaxed text-justify">
+                  {{ artist.frase }}
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <NuxtLink
+                    :to="`/artistsBlog/${artist.slug}`"
+                    class="
+                      text-blue-900 text-xl
+                      inline-flex
+                      items-center
+                      md:mb-2
+                    "
+                    >Leer más
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </NuxtLink>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
 
-    <!--::::::::::::::::::::Efemeride en celular::::::::::::::::::::::::-->
-    <div class="lg:sr-only w-full" v-for="person of persons" :key="person.slug">
-      <div class="flex flex-wrap">
-        <div class="p-4 md:w-1/2 mx-auto">
-          <div
-            class="
-              shadow-lg
-              bg-white bg-opacity-75
-              h-full
-              border-2 border-gray-200 border-opacity-60
-              rounded-lg
-              overflow-hidden
-            "
-          >
-            <p class="text-bold text-2xl p-4 text-left">
-              Un día como hoy, en
-              {{ person.year }}
-            </p>
-            <img
-              class="shadow h-48 w-full object-cover object-center"
-              :src="person.portrait"
-              alt="blog"
-            />
-            <div class="p-6">
-              <h2
-                class="
-                  tracking-widest
-                  text-xs
-                  title-font
-                  font-medium
-                  text-gray-800
-                  mb-1
-                  rounded-full
-                  bg-teal-accent-400
-                "
-              >
-                <NuxtLink to="/artists"> EFEMÉRIDES </NuxtLink>
-              </h2>
-              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                {{ person.name }}
-              </h1>
-              <p class="leading-relaxed mb-3">
-                {{ person.description }}
+      <!--::::::::::::::::::::Efemeride en celular
+    ::::::::::::::::::::::::-->
+      <div
+        class="lg:sr-only w-full"
+        v-for="artist in article"
+        :key="artist.slug"
+      >
+        <div class="flex flex-wrap">
+          <div class="p-4 md:w-1/2 mx-auto">
+            <div
+              class="
+                shadow-lg
+                bg-white bg-opacity-75
+                h-full
+                border-2 border-gray-200 border-opacity-60
+                rounded-lg
+                overflow-hidden
+              "
+            >
+              <p class="text-bold text-2xl p-4 text-left">
+                Un día como hoy, en
+                {{ artist.year }}
               </p>
-              <div class="flex items-center flex-wrap">
-                <NuxtLink
-                  :to="{
-                    name: 'artistsBlog-slug',
-                    params: { slug: person.slug },
-                  }"
+              <img
+                class="shadow h-48 w-full object-cover object-center"
+                :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+                alt="blog"
+              />
+              <div class="p-6">
+                <h2
                   class="
-                    text-blue-900 text-xl
-                    inline-flex
-                    items-center
-                    md:mb-2
-                    lg:mb-0
+                    tracking-widest
+                    text-xs
+                    title-font
+                    font-medium
+                    text-gray-800
+                    mb-1
+                    rounded-full
+                    bg-teal-accent-400
                   "
-                  >Leer más
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </NuxtLink>
+                >
+                  <NuxtLink to="/artists"> EFEMÉRIDES </NuxtLink>
+                </h2>
+                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                  {{ artist.nombre }}
+                </h1>
+                <p class="leading-relaxed mb-3">
+                  {{ artist.frase }}
+                </p>
+                <div class="flex items-center flex-wrap">
+                  <NuxtLink
+                    :to="`/artistsBlog/${artist.slug}`"
+                    class="
+                      text-blue-900 text-xl
+                      inline-flex
+                      items-center
+                      md:mb-2
+                      lg:mb-0
+                    "
+                    >Leer más
+                    <svg
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="M12 5l7 7-7 7"></path>
+                    </svg>
+                  </NuxtLink>
+                </div>
               </div>
             </div>
           </div>
@@ -280,6 +292,7 @@
 <script>
 export default {
   scrollToTop: true,
+
   mounted() {
     VANTA.GLOBE({
       el: "#vanta-selector",
@@ -295,19 +308,18 @@ export default {
       backgroundColor: 0xffffff,
     });
   },
-  async asyncData({ $content, params }) {
+  async asyncData({ $strapi }) {
     const current = new Date();
     const todayDay = current.getDate();
     const todayMonth = current.getMonth();
+    const realMonth = todayMonth + 1;
 
-    const persons = await $content("artists")
-      .where({ day: todayDay, month: todayMonth })
-      .fetch();
-
+    const article = await $strapi.find("artistas", {
+      dia: todayDay,
+      mes: realMonth,
+    });
     return {
-      todayDay,
-      todayMonth,
-      persons,
+      article,
     };
   },
 };

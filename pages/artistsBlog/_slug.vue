@@ -15,8 +15,7 @@
               max-w-xl
               px-4
               mx-auto
-              lg:px-8
-              lg:max-w-screen-xl
+              lg:px-8 lg:max-w-screen-xl
             "
           >
             <div class="mb-16">
@@ -30,8 +29,7 @@
                     font-bold
                     tracking-tight
                     text-gray-900
-                    sm:text-4xl
-                    sm:leading-none
+                    sm:text-4xl sm:leading-none
                   "
                 >
                   <div
@@ -59,19 +57,18 @@
                         h-56
                         rounded
                         shadow-lg
-                        lg:rounded-none
-                        lg:shadow-none
+                        lg:rounded-none lg:shadow-none
                         sm:h-96
                         lg:h-full
                       "
-                      :src="artist.portrait"
+                      :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
                       alt=""
                     />
                   </div>
-                  <p class="ml-5 mt-4">{{ artist.name }}</p>
+                  <p class="ml-5 mt-4">{{ artist.nombre }}</p>
                 </h2>
                 <p class="text-base mx-5 text-gray-900 md:text-lg text-justify">
-                  <nuxt-content :document="artist" />
+                  {{ artist.contenido }}
                 </p>
               </div>
               <div class="flex flex-col items-center md:flex-row">
@@ -92,13 +89,10 @@
                     duration-200
                     rounded
                     shadow-md
-                    md:w-auto
-                    md:mr-4
-                    md:mb-0
+                    md:w-auto md:mr-4 md:mb-0
                     bg-blue-400
                     hover:bg-deep-purple-accent-700
-                    focus:shadow-outline
-                    focus:outline-none
+                    focus:shadow-outline focus:outline-none
                   "
                 >
                   Inicio
@@ -129,7 +123,16 @@
 </template>
 <script>
 export default {
+  async asyncData({ $strapi, params }) {
+    const matchingArticles = await $strapi.find("artistas", {
+      slug: params.slug,
+    });
+    return {
+      artist: matchingArticles[0],
+    };
+  },
   scrollToTop: true,
+  /*
   async asyncData({ $content, params }) {
     const artist = await $content("artists", params.slug)
       .sortBy("createdAt", "asc")
@@ -143,5 +146,6 @@ export default {
 
     return { artist, prev, next };
   },
+  */
 };
 </script>

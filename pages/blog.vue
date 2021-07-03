@@ -50,15 +50,15 @@
           >
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
-              :src="article.image"
+              :src="'https://lavoz.herokuapp.com' + article.imagen.url"
               alt="blog"
             />
             <div class="p-6">
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-                {{ article.name }}
+                {{ article.titulo }}
               </h1>
               <p class="leading-relaxed mb-3">
-                {{ article.description }}
+                {{ article.descripcion }}
               </p>
               <div class="flex items-center flex-wrap">
                 <a
@@ -86,6 +86,14 @@
   </div>
 </template>
 <script>
+export default {
+  async asyncData({ $strapi }) {
+    const articles = await $strapi.find("articulos");
+    return {
+      articles,
+    };
+  },
+};
 /*
 import { useFetch, ref } from "@nuxtjs/composition-api";
 export default {
@@ -97,7 +105,6 @@ export default {
     return { articles };
   },
 };
-  */
 
 export default {
   scrollToTop: true,
@@ -106,4 +113,5 @@ export default {
     return { articles };
   },
 };
+    */
 </script>

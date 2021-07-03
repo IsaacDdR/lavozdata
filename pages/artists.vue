@@ -54,13 +54,16 @@
               relative
             "
           >
-            <img class="w-3/4 mx-auto pb-5" :src="artist.imageCircle" />
+            <img
+              class="w-3/4 mx-auto pb-5 rounded-full"
+              :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+            />
             <h1
               class="title-font text-3xl text-xl font-medium text-gray-900 mb-3"
             >
-              {{ artist.name }}
+              {{ artist.nombre }}
               <p class="text-xl">
-                {{ artist.day + "/" + artist.realMonth + "/" + artist.year }}
+                {{ artist.dia + "/" + artist.mes + "/" + artist.year }}
               </p>
             </h1>
             <p class="leading-relaxed mb-3">
@@ -90,9 +93,15 @@
 <script>
 export default {
   scrollToTop: true,
+  async asyncData({ $strapi }) {
+    const artists = await $strapi.find("artistas");
+    return { artists };
+  },
+  /*
   async asyncData({ $content }) {
     const artists = await $content("artists").fetch();
     return { artists };
   },
+  */
 };
 </script>

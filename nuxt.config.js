@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "server",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -101,6 +101,11 @@ export default {
         httpEndpoint: "http://localhost:1337/graphql",
       },
     },
+  },
+
+  strapi: {
+    entities: ["articulos", "artistas"],
+    url: "https://lavoz.herokuapp.com",
   },
 
   fontawesome: {

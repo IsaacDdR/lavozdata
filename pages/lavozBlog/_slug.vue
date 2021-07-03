@@ -33,10 +33,10 @@
                   sm:text-4xl sm:leading-none
                 "
               >
-                {{ article.name }}
+                {{ article.titulo }}
               </h2>
               <p class="text-base text-gray-900 md:text-lg">
-                {{ article.description }}
+                {{ article.contenido }}
               </p>
             </div>
             <div class="flex items-center">
@@ -107,7 +107,7 @@
               xl:-mb-28
               lg:h-auto lg:max-w-screen-md
             "
-            :src="article.image"
+            :src="'https://lavoz.herokuapp.com' + article.imagen.url"
             alt=""
           />
         </div>
@@ -117,16 +117,8 @@
 </template>
 <script>
 export default {
-  scrollToTop: true,
-  async asyncData({ $content, params }) {
-    const article = await $content("blog", params.slug).fetch();
-    return { article };
-  },
-};
-/*
-export default {
   async asyncData({ $strapi, params }) {
-    const matchingArticles = await $strapi.findOne("articulos", {
+    const matchingArticles = await $strapi.find("articulos", {
       slug: params.slug,
     });
     return {
@@ -134,6 +126,7 @@ export default {
     };
   },
 };
+/*
 import {
   defineComponent,
   useContext,
@@ -156,6 +149,13 @@ export default defineComponent({
     return { article, image };
   },
 });
+export default {
+  scrollToTop: true,
+  async asyncData({ $content, params }) {
+    const article = await $content("articulos", params.id).fetch();
+    return { article };
+  },
+};
 
       */
 </script>
