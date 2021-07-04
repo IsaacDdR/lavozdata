@@ -1,5 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+  target: "server",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -126,10 +127,6 @@ export default {
       icons: ["static/favicon.png"],
       theme_color: "#a3dcff",
     },
-  },
-
-  server: {
-    host: "0.0.0.0",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

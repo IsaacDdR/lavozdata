@@ -67,7 +67,7 @@
                   </div>
                   <p class="ml-5 mt-4">{{ artist.nombre }}</p>
                 </h2>
-                <p class="text-base mx-5 text-gray-900 md:text-lg text-justify">
+                <p class="text-base mx-5 text-gray-900 md:text-lg">
                   {{ artist.contenido }}
                 </p>
               </div>

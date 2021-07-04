@@ -1,7 +1,7 @@
 ---
 year: 1935
 name: Elvis Presley
-day: 2
+day: 3
 month: 6
 realMonth: 1
 frase: La música Rock and Roll, si te gusta, si la sientes, no puedes evitar pasar a ella. Eso es lo que me pasa. No puedo evitarlo.
