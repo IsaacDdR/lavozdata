@@ -90,6 +90,9 @@ export default {
     entities: ["articulos", "artistas"],
     url: "https://lavoz.herokuapp.com",
   },
+  generate: {
+    dir: "public",
+  },
 
   fontawesome: {
     icons: {
