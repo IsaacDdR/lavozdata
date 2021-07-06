@@ -28,9 +28,6 @@ export default {
       {
         src: "/globe.min.js",
       },
-      {
-        src: "topology.min.js",
-      },
     ],
   },
 
@@ -87,8 +84,6 @@ export default {
     "@nuxt/content",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
-
-    "@nuxtjs/google-fonts",
   ],
 
   strapi: {
