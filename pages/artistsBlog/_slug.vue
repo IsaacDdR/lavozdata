@@ -61,7 +61,7 @@
                         sm:h-96
                         lg:h-full
                       "
-                      :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+                      :src="artist.imagen.url"
                       alt=""
                     />
                   </div>

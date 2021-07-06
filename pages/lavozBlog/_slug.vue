@@ -107,7 +107,7 @@
               xl:-mb-28
               lg:h-auto lg:max-w-screen-md
             "
-            :src="'https://lavoz.herokuapp.com' + article.imagen.url"
+            :src="article.imagen.url"
             alt=""
           />
         </div>

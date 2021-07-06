@@ -1,20 +1,15 @@
 <template>
   <nav class="text-blue-900">
+    <!-- <div :class="{ 'hidden' : !showNavbar}"> -->
     <div
       class="bg-transparent fixed w-full z-20"
       :class="{
-        'shadow  bg-blue-usa text-white text-bold border-b-4 border-red-usa':
+        'shadow  bg-blue-usa text-white text-bold border-b-4 border-red-usa bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-80':
           !view.topOfPage,
       }"
     >
-      <div class="views">
-        <span class="views">
-          <img
-            src="https://visitor-badge.glitch.me/badge?page_id='lavozuniversal.com"
-            alt="Views"
-          />
-        </span>
-      </div>
+      <p class="p-2">Visitas : {{ visitors }}</p>
+
       <div class="flex mt-6 text-center w-screen px-6">
         <NuxtLink
           to="/"
@@ -38,8 +33,7 @@
               transition
               duration-200
               rounded
-              focus:outline-none
-              focus:shadow-outline
+              focus:outline-none focus:shadow-outline
             "
             @click="isMenuOpen = true"
           >
@@ -102,6 +96,7 @@
                     </button>
                   </div>
                 </div>
+
                 <nav>
                   <ul class="space-y-4">
                     <li>
@@ -348,6 +343,9 @@
   </nav>
 </template>
 <script>
+import countapi from "countapi-js";
+const OFFSET = 10;
+
 export default {
   scrollToTop: true,
 
@@ -357,7 +355,18 @@ export default {
       view: {
         topOfPage: true,
       },
+      visitors: null,
+      showNavbar: true,
+      lastScrollPosition: 0,
+      scrollValue: 0,
     };
+  },
+  created() {
+    countapi.visits("lavozuniversal").then((result) => {
+      this.visitors = result.value;
+      console.log(visitors);
+      return { visitors };
+    });
   },
 
   watch: {
@@ -368,6 +377,10 @@ export default {
   beforeMount() {
     window.addEventListener("scroll", this.handleScroll);
   },
+  mounted() {
+    this.lastScrollPosition = window.pageYOffset;
+    window.addEventListener("scroll", this.onScroll);
+  },
   methods: {
     handleScroll() {
       if (window.pageYOffset > 20) {
@@ -376,6 +389,19 @@ export default {
         if (!this.view.topOfPage) this.view.topOfPage = true;
       }
     },
+    onScroll() {
+      if (window.pageYOffset < 0) {
+        return;
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+        return;
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition;
+      this.lastScrollPosition = window.pageYOffset;
+    },
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
   },
 };
 </script>

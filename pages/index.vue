@@ -14,57 +14,46 @@
       "
     >
       <div
-        class="bg-white bg-opacity-50 shadow-lg flex mx-auto mt-12"
+        class="flex mx-auto mt-12"
         v-for="artist in article"
         :key="artist.id"
       >
-        <div class="shadow-lg sm:rounded-3xl sr-only lg:not-sr-only">
+        <div class="sr-only lg:not-sr-only">
           <section class="text-gray-600 body-font">
-            <div
-              class="
-                container
-                mx-auto
-                flex
-                mt-8
-                md:flex-row
-                flex-col
-                items-center
-              "
-            >
-              <div class="w-1/2 mb-10 md:mb-0">
-                <img
-                  class="
-                    object-cover object-center
-                    rounded
-                    w-3/4
-                    mx-auto
-                    shadow
-                    rounded-full
-                  "
+            <div class="mx-auto flex mt-8 flex-row items-center">
+              <div class="py-4 w-1/2 mb-10 md:mb-0">
+                <nuxt-img
+                  class="object-center w-2/5 mx-auto shadow-lg rounded-full"
                   alt="hero"
-                  :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+                  format="webp"
+                  :src="artist.imagen.url"
                 />
               </div>
-              <div class="lg:flex-grow md:w-1/2 flex flex-col mr-24 ml-12">
+              <div
+                class="
+                  w-1/3
+                  flex flex-col
+                  mr-24
+                  bg-white
+                  p-8
+                  rounded
+                  border-2 border-blue-600
+                  bg-clip-padding
+                  backdrop-filter backdrop-blur-xl
+                  bg-opacity-50
+                  shadow-lg
+                "
+              >
                 <p class="text-bold text-1xl mb-4 text-left text-gray-800">
                   UN DÍA COMO HOY, EN
                   {{ artist.year }}
                 </p>
-                <h1
-                  class="
-                    title-font
-                    sm:text-4xl
-                    text-3xl
-                    mb-4
-                    font-medium
-                    text-gray-900
-                  "
-                >
+                <h1 class="title-font text-4xl mb-4 font-medium text-gray-900">
                   {{ artist.nombre }}
                   <br class="hidden lg:inline-block" />
                 </h1>
-                <p class="mb-4 leading-relaxed text-justify">
-                  {{ artist.frase }}
+                <p class="mb-4 text-gray-900 text-lg italic">
+                  "{{ artist.frase }}"
                 </p>
                 <div class="flex items-center flex-wrap">
                   <NuxtLink
@@ -121,7 +110,7 @@
               </p>
               <img
                 class="shadow h-48 w-full object-cover object-center"
-                :src="'https://lavoz.herokuapp.com' + artist.imagen.url"
+                :src="artist.imagen.url"
                 alt="blog"
               />
               <div class="p-6">
@@ -235,7 +224,11 @@
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            class="object-cover object-center rounded-full"
+            class="
+              object-cover object-center
+              rounded-full
+              border-4 border-blue-600
+            "
             alt="hero"
             src="~/assets/adolfo.png"
           />

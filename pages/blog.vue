@@ -50,7 +50,7 @@
           >
             <img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
-              :src="'https://lavoz.herokuapp.com' + article.imagen.url"
+              :src="article.imagen.url"
               alt="blog"
             />
             <div class="p-6">
