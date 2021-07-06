@@ -72,8 +72,6 @@ export default {
     "@nuxtjs/fontawesome",
 
     "@nuxt/image",
-
-    "@nuxtjs/composition-api/module",
   ],
 
   tailwindcss: {
@@ -86,22 +84,12 @@ export default {
 
     "@nuxtjs/strapi",
 
-    "@nuxtjs/axios",
-
     "@nuxt/content",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
 
     "@nuxtjs/google-fonts",
   ],
-
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: "http://lavoz-herokuapp.com/graphql",
-      },
-    },
-  },
 
   strapi: {
     entities: ["articulos", "artistas"],
@@ -115,9 +103,6 @@ export default {
     },
   },
 
-  axios: {
-    baseURL: "https://lavoz-app.herokuapp.com",
-  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
