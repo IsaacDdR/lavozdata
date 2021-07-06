@@ -93,8 +93,6 @@ export default {
     "@nuxtjs/pwa",
 
     "@nuxtjs/google-fonts",
-
-    "@nuxtjs/apollo",
   ],
 
   apollo: {
