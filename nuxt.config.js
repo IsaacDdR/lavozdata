@@ -116,9 +116,6 @@ export default {
       brands: true,
     },
   },
-  server: {
-    host: "0.0.0.0",
-  },
 
   axios: {
     baseURL: "https://lavoz-app.herokuapp.com",
