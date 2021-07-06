@@ -48,9 +48,10 @@
               overflow-hidden
             "
           >
-            <img
+            <nuxt-img
               class="lg:h-48 md:h-36 w-full object-cover object-center"
               :src="article.imagen.url"
+              format="webp"
               alt="blog"
             />
             <div class="p-6">

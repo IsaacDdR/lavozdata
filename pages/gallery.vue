@@ -80,7 +80,8 @@
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <nuxt-img
+                format="webp"
                 alt="gallery"
                 class="
                   absolute
@@ -126,7 +127,8 @@
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <nuxt-img
+                format="webp"
                 alt="gallery"
                 class="
                   absolute
@@ -172,7 +174,8 @@
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <nuxt-img
+                format="webp"
                 alt="gallery"
                 class="
                   absolute
@@ -217,7 +220,8 @@
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <nuxt-img
+                format="webp"
                 alt="gallery"
                 class="
                   absolute
@@ -262,7 +266,8 @@
           </div>
           <div class="lg:w-1/3 sm:w-1/2 p-4">
             <div class="flex relative">
-              <img
+              <nuxt-img
+                format="webp"
                 alt="gallery"
                 class="
                   absolute

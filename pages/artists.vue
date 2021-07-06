@@ -54,9 +54,10 @@
               relative
             "
           >
-            <img
+            <nuxt-img
               class="w-3/4 mx-auto pb-5 rounded-full"
               :src="artist.imagen.url"
+              format="webp"
             />
             <h1
               class="title-font text-3xl text-xl font-medium text-gray-900 mb-3"

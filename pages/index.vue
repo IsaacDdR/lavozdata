@@ -22,9 +22,10 @@
           <section class="text-gray-600 body-font">
             <div class="mx-auto flex mt-8 flex-row items-center">
               <div class="py-4 w-1/2 mb-10 md:mb-0">
-                <img
+                <nuxt-img
                   class="object-center w-2/5 mx-auto shadow-lg rounded-full"
                   alt="hero"
+                  format="webp"
                   :src="artist.imagen.url"
                 />
               </div>
@@ -96,7 +97,7 @@
             <div
               class="
                 shadow-lg
-                bg-white bg-opacity-75
+                bg-white
                 h-full
                 border-2 border-gray-200 border-opacity-60
                 rounded-lg
@@ -164,7 +165,7 @@
         </div>
       </div>
     </div>
-    <section class="text-gray-600 body-font mx-auto w-full">
+    <section class="text-gray-600 body-font mx-auto w-full bg-transparent">
       <div
         class="
           container
@@ -179,9 +180,8 @@
       >
         <div
           class="
-            mx-auto
-            md:w-1/4
-            w-full
+            text-center
+            w-1/2 w-full
             flex flex-col
             md:items-start
             mb-8
@@ -198,38 +198,45 @@
               mb-4
               font-medium
               text-gray-900
+              mx-auto
             "
           >
             Adolfo Fernández Zepeda
           </h1>
-          <p class="mb-4 leading-relaxed text-gray-800">
+          <p class="mb-4 leading-relaxed text-gray-600 italics mx-auto text-xl">
             "Todo pasa, todo cambia pero el rock sigue en la voz universal"
           </p>
           <div class="flex justify-center mx-auto">
             <NuxtLink
               to="/about"
-              class="
-                inline-flex
-                text-gray-700
-                py-2
-                focus:outline-none
-                rounded
-                text-lg
-              "
-            >
-              Conoce más
+              class="text-blue-900 text-xl inline-flex items-center md:mb-2"
+              >Conoce más
+              <svg
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
             </NuxtLink>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
+        <div class="w-3/4">
+          <nuxt-img
             class="
               object-cover object-center
               rounded-full
+              shadow-lg
               border-4 border-blue-600
             "
+            format="webp"
             alt="hero"
-            src="~/assets/adolfo.png"
+            src="/images/adolfo.png"
           />
         </div>
       </div>
