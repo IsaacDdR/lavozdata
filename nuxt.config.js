@@ -93,12 +93,14 @@ export default {
     "@nuxtjs/pwa",
 
     "@nuxtjs/google-fonts",
+
+    "@nuxtjs/apollo",
   ],
 
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: "http://localhost:1337/graphql",
+        httpEndpoint: "http://lavoz-herokuapp.com/graphql",
       },
     },
   },

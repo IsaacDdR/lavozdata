@@ -364,8 +364,6 @@ export default {
   created() {
     countapi.visits("lavozuniversal").then((result) => {
       this.visitors = result.value;
-      console.log(visitors);
-      return { visitors };
     });
   },
 

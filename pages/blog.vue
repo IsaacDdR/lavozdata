@@ -94,6 +94,7 @@ export default {
     };
   },
 };
+
 /*
 import { useFetch, ref } from "@nuxtjs/composition-api";
 export default {
