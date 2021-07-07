@@ -62,7 +62,7 @@ export default {
 
     "@nuxtjs/google-analytics",
 
-    "nuxt-vite",
+    //"nuxt-vite",
 
     "@nuxtjs/moment",
 
@@ -89,9 +89,6 @@ export default {
   strapi: {
     entities: ["articulos", "artistas"],
     url: "https://lavoz.herokuapp.com",
-  },
-  generate: {
-    dir: "public",
   },
 
   fontawesome: {
