@@ -68,7 +68,7 @@ export default {
 
     "@nuxtjs/fontawesome",
 
-    //"@nuxt/image",
+    "@nuxt/image",
   ],
 
   tailwindcss: {
