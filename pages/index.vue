@@ -22,10 +22,9 @@
           <section class="text-gray-600 body-font">
             <div class="mx-auto flex mt-8 flex-row items-center">
               <div class="py-4 w-1/2 mb-10 md:mb-0">
-                <nuxt-img
+                <img
                   class="object-center w-2/5 mx-auto shadow-lg rounded-full"
                   alt="hero"
-                  format="webp"
                   :src="artist.imagen.url"
                 />
               </div>
@@ -227,14 +226,13 @@
           </div>
         </div>
         <div class="w-3/4">
-          <nuxt-img
+          <img
             class="
               object-cover object-center
               rounded-full
               shadow-lg
               border-4 border-blue-600
             "
-            format="webp"
             alt="hero"
             src="/images/adolfo.png"
           />
