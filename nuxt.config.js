@@ -80,8 +80,7 @@ export default {
     //"@nuxjs/apollo",
 
     "@nuxtjs/strapi",
-
-    "@nuxt/content",
+    //"@nuxt/content",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
   ],
