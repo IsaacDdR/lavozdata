@@ -107,7 +107,7 @@
                 Un día como hoy, en
                 {{ artist.year }}
               </p>
-              <nuxt-img
+              <img
                 class="shadow h-48 w-full object-cover object-center"
                 :src="artist.imagen.url"
                 alt="blog"
