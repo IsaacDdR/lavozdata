@@ -341,7 +341,7 @@ export default {
     };
   },
   created() {
-    countapi.visits("lavozuniversal").then(result => {
+    countapi.visits("mysite.com").then(result => {
       this.visitors = result.value;
     });
   },
