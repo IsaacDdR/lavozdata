@@ -98,10 +98,6 @@ export default {
     }
   },
 
-  server: {
-    host: "0"
-  },
-
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {

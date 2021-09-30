@@ -4,8 +4,7 @@
     <div
       class="bg-transparent fixed w-full z-20"
       :class="{
-        'shadow  bg-blue-usa text-white text-bold border-b-4 border-red-usa bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-80':
-          !view.topOfPage,
+        'shadow  bg-blue-usa text-white text-bold border-b-4 border-red-usa bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-80': !view.topOfPage
       }"
     >
       <p class="p-2">Visitas : {{ visitors }}</p>
@@ -189,7 +188,7 @@
         </div>
         -->
       </div>
-<!--
+      <!--
       <div
         class="
           px-4
@@ -290,13 +289,13 @@
       
         </div>
         -->
-        <Stream class="md:mb-4 md:mt-4 mb-2 md:w-1/2 mx-auto mt-8" />
+      <Stream class="md:mb-4 md:mt-4 mb-2 md:w-1/2 mx-auto mt-8" />
 
-        <div class="flex">
-          <div class="flex mx-auto">
-            <div class="h-3 w-3 mt-4">
-              <div
-                class="
+      <div class="flex">
+        <div class="flex mx-auto">
+          <div class="h-3 w-3 mt-4">
+            <div
+              class="
                   animate-ping
                   absolute
                   rounded-full
@@ -305,11 +304,10 @@
                   bg-red-600
                   opacity-75
                 "
-              ></div>
-              <div class="rounded-full h-3 w-3 bg-red-500"></div>
-            </div>
-            <p class="mt-2 ml-2">Escucha en vivo</p>
+            ></div>
+            <div class="rounded-full h-3 w-3 bg-red-500"></div>
           </div>
+          <p class="mt-2 ml-2">Escucha en vivo</p>
         </div>
       </div>
     </div>
@@ -331,16 +329,16 @@ export default {
     return {
       isMenuOpen: false,
       view: {
-        topOfPage: true,
+        topOfPage: true
       },
       visitors: null,
       showNavbar: true,
       lastScrollPosition: 0,
-      scrollValue: 0,
+      scrollValue: 0
     };
   },
   created() {
-    countapi.visits("lavozuniversal").then((result) => {
+    countapi.visits("lavozuniversal").then(result => {
       this.visitors = result.value;
     });
   },
@@ -348,7 +346,7 @@ export default {
   watch: {
     $route() {
       this.isMenuOpen = false;
-    },
+    }
   },
   beforeMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -374,11 +372,11 @@ export default {
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition;
       this.lastScrollPosition = window.pageYOffset;
-    },
+    }
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.onScroll);
-  },
+  }
 };
 </script>
 <style>
