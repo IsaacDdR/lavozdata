@@ -311,6 +311,9 @@
         </div>
       </div>
     </div>
+    <!--
+    </div>
+    -->
 
     <transition name="fade-slow">
       <Nuxt />

@@ -81,6 +81,7 @@
             ></path>
           </svg>
         </a>
+        <!-- 
         <a class="ml-3 text-gray-900 hover:text-blue-600">
           <svg
             fill="none"
@@ -97,6 +98,7 @@
             ></path>
           </svg>
         </a>
+        -->
       </span>
     </div>
   </footer>
