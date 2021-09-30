@@ -24,6 +24,7 @@
           />
           <img v-else class="w-48" src="~/static/lavoz-logo.png" />
         </NuxtLink>
+        <!--
         <div class="lg:hidden">
           <button
             aria-label="Open Menu"
@@ -179,26 +180,16 @@
                         >Efemérides</NuxtLink
                       >
                     </li>
-                    <!--
-                      <li>
-                        <a
-                          href="/"
-                          class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </a>
-                      </li>
-                      -->
+               
                   </ul>
                 </nav>
               </div>
             </div>
           </transition>
         </div>
+        -->
       </div>
-
+<!--
       <div
         class="
           px-4
@@ -296,23 +287,10 @@
               >
             </li>
           </ul>
-          <!--
-          <ul class="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                class="bg-white inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Sign up
-              </a>
-            </li>
-          </ul>
-              <Stream />
-          -->
+      
         </div>
-        <Stream class="md:mb-4 md:mt-4 mb-2 md:w-1/2 mx-auto" />
+        -->
+        <Stream class="md:mb-4 md:mt-4 mb-2 md:w-1/2 mx-auto mt-8" />
 
         <div class="flex">
           <div class="flex mx-auto">

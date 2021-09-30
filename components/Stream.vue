@@ -6,7 +6,7 @@
     <audio
       controls
       class="mx-auto w-3/4"
-      src="https://streams.radiomast.io/4af4e331-a5d1-4cfc-a5c7-dfd5d78e38e7"
+      src="https://audio-edge-es6pf.mia.g.radiomast.io/8767dced-4219-40d3-9a83-e783cbf1ef87"
     ></audio>
   </div>
 </template>
