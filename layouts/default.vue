@@ -341,7 +341,7 @@ export default {
     };
   },
   created() {
-    countapi.visits("mysite.com").then(result => {
+    countapi.visits().then(result => {
       this.visitors = result.value;
     });
   },
