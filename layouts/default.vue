@@ -307,7 +307,7 @@
             ></div>
             <div class="rounded-full h-3 w-3 bg-red-500"></div>
           </div>
-          <p class="mt-2 ml-2">Escucha en vivo</p>
+          <p class="my-2 ml-2">Escucha en vivo</p>
         </div>
       </div>
     </div>
