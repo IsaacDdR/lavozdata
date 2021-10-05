@@ -38,7 +38,7 @@
               creado para seguir llegando a todos ustedes, nuestros radio
               escuchas, ahora en está nueva versión por internet podrás
               escucharnos desde tu escritorio o móvil, sintoniza y sigue
-              disfrutando de la La Voz Universal.
+              disfrutando de La Voz Universal.
             </p>
             <hr class="border-gray-300" />
           </div>
@@ -64,6 +64,6 @@
 </template>
 <script>
 export default {
-  scrollToTop: true,
+  scrollToTop: true
 };
 </script>
