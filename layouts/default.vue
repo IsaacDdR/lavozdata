@@ -20,7 +20,7 @@
           <img
             v-if="!view.topOfPage"
             class="w-48"
-            src="~/static/logo-la-voz.png"
+            src="~/static/logo-la-voz-white.png"
           />
           <img v-else class="w-48" src="~/static/logo-la-voz.png" />
         </NuxtLink>
