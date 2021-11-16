@@ -203,7 +203,7 @@
             Adolfo Fernández Zepeda
           </h1>
           <p class="mb-4 leading-relaxed text-gray-600 italics mx-auto text-xl">
-            "Todo pasa, todo cambia pero el rock sigue en AdolfoFM"
+            "Generaciones van, generaciones vienen, pero... otras marcan huella"
           </p>
           <div class="flex justify-center mx-auto">
             <NuxtLink
