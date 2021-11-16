@@ -4,36 +4,35 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "La Voz Universal",
+    title: "AdolfoFM",
     meta: [
       { name: "theme-color", content: "#b1d0c6" },
       { charset: "utf-8" },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1"
+        content: "width=device-width, initial-scale=1",
       },
       {
-        hid:
-          "La voz universal es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
-        name: "La voz Universal la estacion de radio favorita de los mexicanos",
-        content: ""
-      }
+        hid: "AdolfoFM es el programa de radio favorito por muchos mexicanos, con el legendario Alfredo Fernandez Zepeda ",
+        name: "AdolfoFM la estacion de radio favorita de los mexicanos",
+        content: "",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
       {
-        src: "/three.min.js"
+        src: "/three.min.js",
       },
       { src: "/p5.min.js" },
 
       {
-        src: "/globe.min.js"
-      }
-    ]
+        src: "/globe.min.js",
+      },
+    ],
   },
 
   googleAnalytics: {
-    id: "G-7XPGVY5Y84"
+    id: "G-7XPGVY5Y84",
   },
 
   googleFonts: {
@@ -43,9 +42,9 @@ export default {
       Lato: [100, 300],
       Raleway: {
         wght: [100, 400],
-        ital: [100]
-      }
-    }
+        ital: [100],
+      },
+    },
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -67,13 +66,13 @@ export default {
 
     "@nuxtjs/moment",
 
-    "@nuxtjs/fontawesome"
+    "@nuxtjs/fontawesome",
 
     //"@nuxt/image",
   ],
 
   tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css"
+    cssPath: "~/assets/css/tailwind.css",
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -83,32 +82,32 @@ export default {
     "@nuxtjs/strapi",
     //"@nuxt/content",
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa"
+    "@nuxtjs/pwa",
   ],
 
   strapi: {
     entities: ["articulos", "artistas"],
-    url: "https://lavoz.herokuapp.com"
+    url: "https://lavoz.herokuapp.com",
   },
 
   fontawesome: {
     icons: {
       solid: true,
-      brands: true
-    }
+      brands: true,
+    },
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      name: "La Voz Universal",
-      short_name: "La Voz Universal",
+      name: "AdolfoFM",
+      short_name: "AdolfoFM",
       lang: "es",
       icons: ["static/favicon.png"],
-      theme_color: "#a3dcff"
-    }
+      theme_color: "#a3dcff",
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
 };

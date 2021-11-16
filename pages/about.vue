@@ -9,8 +9,7 @@
         md:max-w-full
         lg:max-w-screen-xl
         md:px-24
-        lg:px-8
-        lg:py-48
+        lg:px-8 lg:py-48
       "
     >
       <div class="mt-4 md:mt-8">
@@ -34,11 +33,10 @@
               Más de nosotros
             </h5>
             <p class="text-justify mb-8 mt-5 font-bold text-gray-900">
-              La Voz universal radio en vivo por internet, esté sitio web fue
-              creado para seguir llegando a todos ustedes, nuestros radio
-              escuchas, ahora en está nueva versión por internet podrás
-              escucharnos desde tu escritorio o móvil, sintoniza y sigue
-              disfrutando de La Voz Universal.
+              AdolfoFM radio en vivo por internet, esté sitio web fue creado
+              para seguir llegando a todos ustedes, nuestros radio escuchas,
+              ahora en está nueva versión por internet podrás escucharnos desde
+              tu escritorio o móvil, sintoniza y sigue disfrutando de AdolfoFM.
             </p>
             <hr class="border-gray-300" />
           </div>
@@ -64,6 +62,6 @@
 </template>
 <script>
 export default {
-  scrollToTop: true
+  scrollToTop: true,
 };
 </script>

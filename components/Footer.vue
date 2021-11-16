@@ -14,16 +14,12 @@
           text-gray-900
         "
       >
-        <span class="ml-3 text-xl">La Voz Universal</span>
+        <span class="ml-3 text-xl">AdolfoFM</span>
       </a>
       <p
         class="
           text-sm text-gray-900
-          sm:ml-4
-          sm:pl-4
-          sm:border-l-2 sm:border-gray-900
-          sm:py-2
-          sm:mt-0
+          sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-900 sm:py-2 sm:mt-0
           mt-4
           text-center
         "
@@ -40,8 +36,7 @@
       <span
         class="
           inline-flex
-          sm:ml-auto
-          sm:mt-0
+          sm:ml-auto sm:mt-0
           mt-4
           justify-center
           sm:justify-start

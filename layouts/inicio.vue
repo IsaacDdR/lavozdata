@@ -27,7 +27,7 @@
               <span
                 v-if="!view.topOfPage"
                 class="ml-2 text-xl font-bold tracking-wide mx-auto text-center"
-                >La Voz Universal</span
+                >AdolfoFM</span
               >
             </NuxtLink>
             <ul class="flex items-center hidden space-x-8 lg:flex">
@@ -131,8 +131,7 @@
                   transition
                   duration-200
                   rounded
-                  focus:outline-none
-                  focus:shadow-outline
+                  focus:outline-none focus:shadow-outline
                 "
                 @click="isMenuOpen = true"
               >
@@ -170,7 +169,7 @@
                               text-gray-800
                               uppercase
                             "
-                            >La Voz Universal</span
+                            >AdolfoFM</span
                           >
                         </a>
                       </div>

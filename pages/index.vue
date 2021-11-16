@@ -203,7 +203,7 @@
             Adolfo Fernández Zepeda
           </h1>
           <p class="mb-4 leading-relaxed text-gray-600 italics mx-auto text-xl">
-            "Todo pasa, todo cambia pero el rock sigue en La Voz Universal"
+            "Todo pasa, todo cambia pero el rock sigue en AdolfoFM"
           </p>
           <div class="flex justify-center mx-auto">
             <NuxtLink
@@ -261,7 +261,7 @@
                 ></path>
               </svg>
               <p class="leading-relaxed text-2xl text-gray-900">
-                "Todo pasa todo cambia pero el rock sigue en la voz universal"
+                "Todo pasa todo cambia pero el rock sigue en AdolfoFM"
               </p>
               <span
                 class="inline-block h-1 w-10 rounded bg-gray-900 mt-8 mb-6"
@@ -278,7 +278,7 @@
                 ADOLFO FERNÁNDEZ ZEPEDA
               </h2>
               <p class="text-gray-800">Locutor</p>
-              <p class="text-gray-800">"La Voz Universal"</p>
+              <p class="text-gray-800">"AdolfoFM"</p>
             </div>
           </div>
         </section>
@@ -302,7 +302,7 @@ export default {
       scaleMobile: 1.0,
       color: 0x1c47e8,
       color2: 0xff0000,
-      backgroundColor: 0xffffff
+      backgroundColor: 0xffffff,
     });
   },
   async asyncData({ $strapi }) {
@@ -313,12 +313,12 @@ export default {
 
     const article = await $strapi.find("artistas", {
       dia: todayDay,
-      mes: realMonth
+      mes: realMonth,
     });
     return {
-      article
+      article,
     };
-  }
+  },
 };
 </script>
 
