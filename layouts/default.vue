@@ -342,7 +342,7 @@ export default {
     };
   },
   created() {
-    countapi.visits("adolfofm", "site").then((result) => {
+    countapi.hit("mysite.com", "test").then((result) => {
       this.visitors = result.value;
     });
   },
