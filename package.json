@@ -28,5 +28,9 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/tailwindcss": "^4.2.0"
+  },
+  "engines": {
+    "node": "14.20.0",
+    "npm": "6.14.17"
   }
 }
