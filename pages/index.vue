@@ -84,8 +84,6 @@
         </div>
       </div> -->
 
-      <!--::::::::::::::::::::Efemeride en celular
-    ::::::::::::::::::::::::-->
       <!--       <div
         class="lg:sr-only w-full"
         v-for="artist in article"
