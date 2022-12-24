@@ -84,7 +84,8 @@
         </div>
       </div> -->
 
-      <!--       <div
+      <!--       
+        <div
         class="lg:sr-only w-full"
         v-for="artist in article"
         :key="artist.slug"
