@@ -13,7 +13,7 @@
         md:pt-64
       "
     >
-      <div
+      <!--     <div
         class="flex mx-auto mt-12"
         v-for="artist in article"
         :key="artist.id"
@@ -82,11 +82,11 @@
             </div>
           </section>
         </div>
-      </div>
+      </div> -->
 
       <!--::::::::::::::::::::Efemeride en celular
     ::::::::::::::::::::::::-->
-      <div
+      <!--       <div
         class="lg:sr-only w-full"
         v-for="artist in article"
         :key="artist.slug"
@@ -162,7 +162,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <section class="text-gray-600 body-font mx-auto w-full bg-transparent">
       <div
@@ -305,7 +305,8 @@ export default {
       backgroundColor: 0xffffff,
     });
   },
-  async asyncData({ $strapi }) {
+
+  /*   async asyncData({ $strapi }) {
     const current = new Date();
     const todayDay = current.getDate();
     const todayMonth = current.getMonth();
@@ -318,7 +319,7 @@ export default {
     return {
       article,
     };
-  },
+  }, */
 };
 </script>
 
